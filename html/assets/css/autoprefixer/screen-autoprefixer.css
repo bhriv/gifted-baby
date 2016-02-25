@@ -1,0 +1,246 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* ----------------------  
+Import Resets
+---------------------- */
+@import url(../css/bootstrap/bootstrap.css);
+@import url(../css/bootstrap/bootstrap-responsive.css);
+/* Test For autoprefixer browser support */
+/* line 4, ../sass/_custom.scss */
+::-webkit-input-placeholder{
+  color: #ccc;
+}
+::-moz-placeholder{
+  color: #ccc;
+}
+:-ms-input-placeholder{
+  color: #ccc;
+}
+::placeholder {
+  color: #ccc;
+}
+
+/* line 5, ../sass/_game.scss */
+div#phand, div#dhand {
+  font-weight: 700;
+  position: absolute;
+  top: -122px;
+  white-space: nowrap;
+  width: 1000px;
+}
+
+/* line 15, ../sass/_game.scss */
+#money, #money:before {
+  border-radius: 5px;
+  bottom: 0;
+  height: 100px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  width: 250px;
+}
+
+/* line 28, ../sass/_game.scss */
+#cash, #bank {
+  color: #fff;
+  font: 700 18px/20px Helvetica, Arial, Verdana, sans-serif;
+  margin: 12px 0;
+  padding: 1em 0.5em;
+  position: relative;
+  text-shadow: 1px 1px #000;
+  z-index: 1;
+}
+
+/* line 40, ../sass/_game.scss */
+#wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* line 44, ../sass/_game.scss */
+h3 {
+  margin: 4px 0;
+  text-align: center;
+}
+
+/* line 48, ../sass/_game.scss */
+#game {
+  background: red url(http://i.imgur.com/iZrhFim.png) 0 0 no-repeat;
+  border-radius: 5px;
+  color: #333;
+  font: 14px/17px Helvetica, Arial, Verdana, sans-serif;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+}
+
+/* line 61, ../sass/_game.scss */
+div#dscore {
+  position: absolute;
+  bottom: 30px;
+}
+/* line 65, ../sass/_game.scss */
+div#pscore {
+  position: absolute;
+  bottom: 15px;
+}
+
+/* line 76, ../sass/_game.scss */
+div[class*="card"] {
+  background: #fff;
+  border: 6px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #000;
+  display: inline-block;
+  height: 106px;
+  margin: 0 5px;
+  position: absolute;
+  right: 0;
+  width: 79px;
+}
+
+/* line 90, ../sass/_game.scss */
+.down {
+  background: #b20000 url(http://i.imgur.com/Z2KLUOw.png) center center no-repeat !important;
+}
+
+/* line 94, ../sass/_game.scss */
+span.pos-0 {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+/* line 99, ../sass/_game.scss */
+span.pos-1 {
+  bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/* line 107, ../sass/_game.scss */
+span.rank {
+  font-size: 18px;
+}
+/* line 110, ../sass/_game.scss */
+span.suit {
+  font-size: 22px;
+}
+
+/* line 114, ../sass/_game.scss */
+.black {
+  color: #000;
+}
+
+/* line 117, ../sass/_game.scss */
+.red {
+  color: #f00;
+}
+
+/* line 120, ../sass/_game.scss */
+#result {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 124, ../sass/_game.scss */
+#actions {
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+/* line 128, ../sass/_game.scss */
+#money {
+  border: 2px solid #ffc926;
+}
+/* line 131, ../sass/_game.scss */
+#money:before {
+  background: #333;
+  content: '';
+  opacity: 0.8;
+}
+
+/* line 144, ../sass/_game.scss */
+#alert {
+  margin: 0 auto;
+  opacity: 0.95;
+  position: relative;
+  text-align: center;
+  top: 34.5%;
+  width: 500px;
+  z-index: 0;
+}
+
+/* line 153, ../sass/_game.scss */
+div[id*="pcard"] .popover {
+  left: -95px !important;
+}
+
+/* line 156, ../sass/_game.scss */
+div[id*="dcard"] .popover {
+  left: -105px !important;
+}
+
+/* line 159, ../sass/_game.scss */
+input#wager {
+  margin-left: 5px;
+  position: relative;
+  top: 4px;
+}
+
+/* line 171, ../sass/_game.scss */
+.pokerchip {
+  margin: .5em;
+  font-size: 1.2em;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 5em;
+  height: 5em;
+  background: #555;
+  border-radius: 50%;
+  position: relative;
+  border: 0.5em dashed white;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+/* line 188, ../sass/_game.scss */
+.pokerchip.left {
+  position: relative;
+  left: -110px;
+}
+/* line 192, ../sass/_game.scss */
+.pokerchip.red {
+  background: #dd4631;
+}
+/* line 195, ../sass/_game.scss */
+.pokerchip.blue {
+  background: #317ddd;
+}
+/* line 198, ../sass/_game.scss */
+.pokerchip.flat {
+  box-shadow: 0 0 0 0.2em white;
+}
+/* line 201, ../sass/_game.scss */
+.pokerchip.flat:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/* line 206, ../sass/_game.scss */
+.pokerchip.iso {
+  -webkit-transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg);
+          transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg);
+  box-shadow: -1px 1px 0 #555, -2px 2px 0 #555, -3px 3px 0 #555, -4px 4px 0 #555, -5px 5px 0 #555, -6px 6px 10px #555;
+}
+/* line 211, ../sass/_game.scss */
+.pokerchip.iso:hover {
+  -webkit-transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg) translateZ(0.5em);
+          transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg) translateZ(0.5em);
+}
