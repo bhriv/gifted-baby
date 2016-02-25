@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/screen.css">
         <script src="assets/js/vendor/modernizr.min.js"></script>
+        <script src="assets/js/console-class.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -19,7 +20,7 @@
         <![endif]-->
         
         <div class="alert alert-error" id="landscape_warning">
-            Blackjack JS is optimized to play in Landscape orientation on small screen devices. Please ensure your device is in Landscape.<br>
+            GIFTED BABY is optimized to play in Landscape orientation on small screen devices. Please ensure your device is in Landscape.<br>
             <span id="landscape_warning_close"><strong>Hide this message</strong></span>
         </div>
         
@@ -29,7 +30,7 @@
                 <div id="main_game_holder">
                     <header>
                         <ul>
-                            <li id="blackjackjs_logo"><a href="">lumious</a></li>
+                            <li id="blackjackjs_logo"><a href="">Gifted Baby</a></li>
                             <!-- <li class="cheatmode"><i class="fa fa-pie-chart"></i> <span id="deck_stack">5/6</span> <span id="penetration">80</span>&#37;</li> -->
                             <li class=""><i class="fa fa-hand-stop-o"></i> Hands: <span id="total_hands">0</span></li>
                             <li class=""><i class="fa fa-pie-chart"></i> Wins: <span id="win_average">0</span>&#37; <small><em>skill</em></small> <span id="luck_average">0</span>&#37; <small><em>luck</em></small></li>
@@ -49,8 +50,21 @@
 
                             <!-- <input type="text" id="ps"> -->
                             <!-- <input type="text" id="ds"> -->
-
+                            
                             <div id="game">
+                                <!-- Gifted Baby -->
+
+                                <div id="left" class="people">
+                                    <img src="" alt="" width="100" height="100">
+                                    <p class="name">left</p>
+                                </div>
+                                <div id="right" class="people">
+                                    <img src="" alt="" width="100" height="100">
+                                    <p class="name">right</p>
+                                </div>
+                                <!-- Gifted Baby -->
+
+
                                 <div id="dealer">
                                     <div id="dhand"></div>
                                 </div>
@@ -170,9 +184,104 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <!--
         <script src="assets/js/lumi.js"></script>
         <script src="assets/js/lumi-blackjack.js"></script>
+        -->
+        
         <script src="assets/js/main.js"></script>
+    <script>
+        $('#newgame').hide();
+        var people = [];
+        var people = [
+            {
+                "name": "Mommy",
+                "img_url": "mommy.jpg"
+            },
+            {
+                "name": "Daddy",
+                "img_url": "daddy.jpg"
+            },
+            {
+                "name": "Nanni",
+                "img_url": "nanni.jpg"
+            },
+            {
+                "name": "Grandma",
+                "img_url": "grandma.jpg"
+            }
+        ];
+
+
+        var game_counter = 0;
+        var correct_answers = 0;
+        var attempts = 0;
+
+        // RUN
+        runGame();
+        function runGame(){
+            game_counter++;
+            var correct_item = Math.floor(Math.random() * 2);
+            var left_card = Math.floor(Math.random() * 2);
+
+            // Randomize the Array
+            people.sort(function() { return 0.5 - Math.random() });
+            cc(people[0].name+' '+people[1].name+' '+people[2].name, 'info');
+            var first_card = people[0];
+            cc(first_card.name);
+            // Remove first choice to prevent duplicate
+            var second_card = people[1];
+            cc(second_card.name);
+            
+            $('#left img').attr("src", people[0].img_url);
+            $('#right img').attr("src", people[1].img_url);
+            $('#left .name').html(people[0].name);
+            $('#right .name').html(people[1].name);
+
+            $('#total_hands').html(game_counter);
+            $('.people').removeClass('correct');
+            cc('random: '+correct_item, 'info');
+
+            if (correct_item == 0) {
+                $('#left').addClass('correct');
+            }
+            if (correct_item == 1) {
+                $('#right').addClass('correct');
+            }
+            cc(people[0].name,'success');
+        }
+        
+
+        
+        $('.people').on('click', function(event) {
+            // getResult();
+            attempts++;
+            var test = $(this).hasClass('correct');
+            cc('test: '+test, 'warning');
+            if (test == true) {
+                correct_answers++;
+                alert('CORRECT ('+correct_answers+'/'+attempts+' attempts) ');
+                runGame();
+            }else{
+                alert('FALSE ('+correct_answers+'/'+attempts+' attempts)');
+            }
+        });
+       
+    </script>
+
+    <style>
+    .people{
+        background: #fff;
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .correct{
+        background-color: #ccc;
+    }
+    </style>
          
         
 

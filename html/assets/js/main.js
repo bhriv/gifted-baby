@@ -1,9 +1,9 @@
 // Main.js non-minified
 
 var E_LEARNING = {
-  'course_id'   : 'VGBJIIQO4883VA3',
-  'course_iri'  : 'http://t2000inc.com/technologies/lumijs4/',
-  'locker_id'   : '641ffecc2a18a87cab42ebd8fadb4bf9'
+  // 'course_id'   : 'VGBJIIQO4883VA3',
+  // 'course_iri'  : 'http://t2000inc.com/technologies/lumijs4/',
+  // 'locker_id'   : '641ffecc2a18a87cab42ebd8fadb4bf9'
 };
 
 // ===========================
@@ -817,30 +817,31 @@ var use_DeckOfCardsAPI = false;
       last_action_time = last_action_time/10000;
       console.log('ROUNDED now: '+right_now+' vs last_action_time: '+last_action_time);
       // Determine what Kind of Verb to Post:
-      if (v == "deal") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - deal');
-      };
-      if (v == "hit") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - hit');
-      };
-      if (v == "stand") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - stand');
-      };
-      if (v == "double") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - double');
-      };
-      if (v == "insurance") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - insurance');
-      };
-      if (v == "split") {
-        Lumi.jot(current_game_status);
-        console.log('SENT - split');
-      }; 
+      
+      // if (v == "deal") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - deal');
+      // };
+      // if (v == "hit") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - hit');
+      // };
+      // if (v == "stand") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - stand');
+      // };
+      // if (v == "double") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - double');
+      // };
+      // if (v == "insurance") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - insurance');
+      // };
+      // if (v == "split") {
+      //   Lumi.jot(current_game_status);
+      //   console.log('SENT - split');
+      // }; 
       // END post to Lumi
     }else{
       console.log('Hand ENDED!: '+hand_is_ended);
@@ -1436,7 +1437,7 @@ var use_DeckOfCardsAPI = false;
     console.log('LumiGameResult');
     console.log(LumiGameResult);
     LumiGameResult.verb = result;
-    Lumi.jot(LumiGameResult);
+    // Lumi.jot(LumiGameResult);
     console.log('********* END trackResult **********');
   }
   /*****************************************************************/
@@ -1476,28 +1477,28 @@ var use_DeckOfCardsAPI = false;
 
       function Setup_Lumi(){
         console.log('Setup_Lumi fired');
-        Lumi.logging_enabled = true;
-        Lumi.setLearner(name[0],email[0]);
-        // New User Registered
-        Lumi.addVerb('REGISTERED');
+        // Lumi.logging_enabled = true;
+        // Lumi.setLearner(name[0],email[0]);
+        // // New User Registered
+        // Lumi.addVerb('REGISTERED');
 
-        // Game Interactions
-        Lumi.addVerb('DEAL');
-        Lumi.addVerb('HIT');
-        Lumi.addVerb('STAND');
-        Lumi.addVerb('DOUBLEDOWN');
-        Lumi.addVerb('INSURANCE');
-        Lumi.addVerb('SPLIT');
+        // // Game Interactions
+        // Lumi.addVerb('DEAL');
+        // Lumi.addVerb('HIT');
+        // Lumi.addVerb('STAND');
+        // Lumi.addVerb('DOUBLEDOWN');
+        // Lumi.addVerb('INSURANCE');
+        // Lumi.addVerb('SPLIT');
 
-        // Blackjack, Win, Bust, Win - dealer bust, Loss, Loss - dealer Blackjack, Push, Bust
-        Lumi.addVerb('RESULT');
-        Lumi.addVerb('BLACKJACK');
-        Lumi.addVerb('WIN');
-        Lumi.addVerb('WIN_DEALER_BUST');
-        Lumi.addVerb('LOSS');
-        Lumi.addVerb('LOSS_DEALER_BLACKJACK');
-        Lumi.addVerb('BUSTED');
-        Lumi.addVerb('PUSH');
+        // // Blackjack, Win, Bust, Win - dealer bust, Loss, Loss - dealer Blackjack, Push, Bust
+        // Lumi.addVerb('RESULT');
+        // Lumi.addVerb('BLACKJACK');
+        // Lumi.addVerb('WIN');
+        // Lumi.addVerb('WIN_DEALER_BUST');
+        // Lumi.addVerb('LOSS');
+        // Lumi.addVerb('LOSS_DEALER_BLACKJACK');
+        // Lumi.addVerb('BUSTED');
+        // Lumi.addVerb('PUSH');
       } 
       Setup_Lumi();
 
@@ -1510,7 +1511,7 @@ var use_DeckOfCardsAPI = false;
         "player_level": player_level
       };
       new_user.verb = 'REGISTERED';
-      Lumi.jot(new_user);
+      // Lumi.jot(new_user);
       console.log('SENT - new_user REGISTERED');
       $('#info_show').show();
     });  
@@ -1646,7 +1647,7 @@ var use_DeckOfCardsAPI = false;
 $( document ).ready(function() {
   console.log('Document ready');
   $('.cheatmode').hide();
-  Lumi.openLocker(E_LEARNING.locker_id, E_LEARNING.course_id, E_LEARNING.course_iri);
+  // Lumi.openLocker(E_LEARNING.locker_id, E_LEARNING.course_id, E_LEARNING.course_iri);
 }); // end doc ready
 
 function extend(obj, src) {

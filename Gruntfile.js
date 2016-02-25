@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                     '<%= dirs.js_folder %>/vendor/jquery.js',  // Special Sauce trigger
                     '<%= dirs.js_folder %>/vendor/bootstrap-transition.v2.3.2.js',  // Special Sauce trigger
                     '<%= dirs.js_folder %>/vendor/underscore.1.8.2.js',  // Special Sauce trigger
-                    '<%= dirs.js_folder %>/lumi.js',  // Special Sauce trigger
+                    // '<%= dirs.js_folder %>/lumi.js',  // Special Sauce trigger
                     // '<%= dirs.js_folder %>/lumi-blackjack.js',  // Special Sauce trigger
                     '<%= dirs.js_folder %>/main.js'  // This specific file
                 ],
