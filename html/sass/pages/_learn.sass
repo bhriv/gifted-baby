@@ -1,0 +1,25 @@
+body.courses
+  #card_holder 
+    margin-top: 2em
+    .card_profile
+      display: none
+  ul#course_switch
+    width: 100%
+    clear: both
+    li
+      width: auto
+      height: auto
+      float: left
+      @include media(max-width $smartphone)
+        height: 40px
+      a
+        padding: 0.5em 1em
+        @include media(max-width $smartphone)
+          padding: 0.5em
+    li.active,
+    li.hover
+      color: #fff
+      a
+        color: #fff
+        background-color: #9eda82
+    

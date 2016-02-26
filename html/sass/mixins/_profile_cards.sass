@@ -1,0 +1,70 @@
+ul#profile_cards
+  min-height: 240px
+  clear: both
+  @include media(max-width $smartphone)
+    height: auto
+  .author_comment
+    position: relative
+    border: none
+  li.staff
+    width: 25%
+    max-width: 240px
+    height: 280px
+    float: left
+    margin-right: 2%
+    text-align: center
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(12),
+    &:nth-child(16),
+    &:nth-child(20),
+    &:nth-child(24),
+    &:nth-child(28),
+    &:nth-child(32),
+    &:nth-child(36),
+    &:nth-child(40),
+    &:nth-child(44),
+    &:nth-child(48)
+      margin-right: 0
+      @include media(max-width $smartphone)
+        margin-right: auto
+    @include media(max-width $smartphone)
+      width: 100%
+      float: none
+      @include center-block
+  .author_comment-image,
+  .author_content
+    position: absolute
+    top: 0
+    left: 0
+  .author_comment-image
+    padding: 0
+    width: 100%
+  .author_comment-image img
+    max-width: 100%
+  .author_content 
+    left: 25%
+    width: 120px
+    margin-top: 35px
+    opacity: 0
+    span
+      display: block
+      height: 70px
+    p
+      margin-bottom: 0
+    .social_media
+      margin-top: 0
+      li a:hover
+        text-decoration: none
+        color: #000
+  li:hover 
+    .author_content
+      opacity: 1
+      h3,
+      p,
+      i,
+      a
+        line-height: 30px
+        padding: 0
+        color: #fff
+  

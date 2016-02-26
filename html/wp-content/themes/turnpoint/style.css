@@ -1,0 +1,462 @@
+/*
+Theme Name:         turnpoint
+Theme URI:          http://invitrodev.com/
+Description:        A super sexy custom HTML5 CSS3 Responsive theme developed by In Vitro Dev.
+Version:            1.0.0
+Author:             BHRIV
+Author URI:         http://invitrodev.com/
+Template:     roots
+
+License:            Licensed exclusively to Turn Point / Hubud. All files used in connection with turnpoint.io (or other domain) are stricly for use by turnpoint.io and may not be copied, resold, distributed or editied. Refer to the development Terms and Conditions in the governing agreement with In Vitro / Benjamin Richards for specific definitions.
+*/
+
+@import url("../../../css/screen.css?v=1.1");
+.footer-container footer.wrapper ul li a:hover{
+  color: #49e1cd !important;
+}
+html body div.visiblebox{
+    left: 30% !important;
+    top: 10% !important;
+    width: 40% !important;
+  }
+  html body div.visiblebox div#message p{
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  html body div.visiblebox div#message{
+    background-color: #f5f5f5;
+    width: 100% !important;
+    height: auto !important;
+    color: inherit !important;
+    padding: 1em;
+
+  }
+  div#message div.infusion-field{
+    margin: 1em 0;
+  }
+  div#more_info_register select,
+  div#more_info_register input[type="text"],
+  div#more_info_register input[type="email"],
+  div#message div.infusion-field select,
+  div#message div.infusion-field input[type="text"], 
+  div#message div.infusion-field input[type="email"]{
+    width: 100%;
+    max-width: 100%;
+  }
+
+body.cart .cart-empty{
+  display: none;
+}
+body.cart .wrap .main-container{
+  margin-top: 1em;
+}
+body.cart ul.navigation-menu li{
+  display: none;
+}
+body.cart ul.navigation-menu li:last-child{
+  display: inline-block;
+}
+/*body.checkout .main-container .main,*/
+body.cart .main-container .main{
+  width: 600px;
+  float: none;
+  margin: 0 auto;
+}
+body.cart .main-container aside{
+  display: none;
+}
+body.cart .cart_totals{
+  display: none;
+}
+#switcher_pad{
+  height: 90px;
+}
+body.home ul#term_links{
+  margin-bottom: 90px;
+}
+body.home nav.home_page_nav ul li:first-child{
+  margin-left: 0;
+}
+body.home time, 
+body.home time.updated{
+  text-align: left;
+  display: block;
+}
+
+body.courses .card_profile:nth-child(3),
+body.courses .card_profile:nth-child(6),
+body.courses .card_profile:nth-child(9),
+body.courses .card_profile:nth-child(12),
+body.courses .card_profile:nth-child(15){
+  margin-right: 4%;
+}
+
+/*body.articles .main .card_profile{
+  width: 48%;
+  margin-right: 0%;
+}
+body.articles .article.card_profile{
+  margin-right: 0%;
+}
+
+body.articles .card_profile:nth-child(3),
+body.articles .card_profile:nth-child(6),
+body.articles .card_profile:nth-child(9),
+body.articles .card_profile:nth-child(12),
+body.articles .card_profile:nth-child(15),
+body.articles .card_profile:nth-child(18){
+  margin-right: 4%;
+}*/
+
+body.home #upcoming_courses .card_profile,
+body.category .card_profile,
+body.courses .card_profile{
+  width: 30%;
+  margin-right: 5%;
+  margin-left: 0;
+}
+
+body.home #upcoming_courses .card_profile:nth-child(3),
+body.courses .card_profile:nth-child(3),
+body.courses .card_profile:nth-child(6),
+body.courses .card_profile:nth-child(9),
+body.courses .card_profile:nth-child(12),
+body.courses .card_profile:nth-child(15),
+body.courses .card_profile:nth-child(18),
+body.courses .card_profile:nth-child(21),
+body.courses .card_profile:nth-child(24),
+body.courses .card_profile:nth-child(27),
+body.courses .card_profile:nth-child(30),
+body.courses .card_profile:nth-child(33),
+body.courses .card_profile:nth-child(36),
+body.courses .card_profile:nth-child(39),
+body.courses .card_profile:nth-child(42),
+
+body.category .card_profile:nth-child(3),
+body.category .card_profile:nth-child(6),
+body.category .card_profile:nth-child(9),
+body.category .card_profile:nth-child(12),
+body.category .card_profile:nth-child(15),
+body.category .card_profile:nth-child(18),
+body.category .card_profile:nth-child(21),
+body.category .card_profile:nth-child(24),
+body.category .card_profile:nth-child(27),
+body.category .card_profile:nth-child(30),
+body.category .card_profile:nth-child(33),
+body.category .card_profile:nth-child(36),
+body.category .card_profile:nth-child(39),
+body.category .card_profile:nth-child(42)
+{
+  margin-right: 0;
+}
+
+.card_profile .card_profile-image{
+  width: 100%;
+}
+body.podcasts .two_cards .card_profile{
+  margin-right: 0;
+}
+
+body.single-article .card_profile{
+  width: 47%;
+  margin-right: 0;
+}
+
+body.single-article .card_profile:nth-child(1),
+body.single-article .card_profile:nth-child(3),
+body.single-article .card_profile:nth-child(6),
+body.single-article .card_profile:nth-child(9),
+body.podcasts .two_cards .card_profile:nth-child(1),
+body.podcasts .two_cards .card_profile:nth-child(3){
+  margin-right: 5% !important
+}
+
+body aside.sidebar .card_profile{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 2;
+}
+
+/*@import url("http://newdemoserver.com/turnpoint/turnpoint-update.css");*/
+
+
+ul#profile_cards li .author_content h3{
+  line-height: 30px !important;
+}
+
+ul#profile_cards li .author_content ul li a,
+ul#profile_cards li .author_content ul li a i,
+ul#profile_cards li .author_content span,
+ul#profile_cards li .author_content h3,
+ul#profile_cards li .author_content a,
+ul#profile_cards li .author_content p,
+ul#profile_cards li .author_content p em,
+ul#profile_cards li .author_content {
+  opacity: 1 !important;
+  color: #fff !important;
+}
+
+ul#profile_cards li.staff:nth-child(24), 
+ul#profile_cards li.staff:nth-child(28),
+ul#profile_cards li.staff:nth-child(32),
+ul#profile_cards li.staff:nth-child(36),
+ul#profile_cards li.staff:nth-child(40),
+ul#profile_cards li.staff:nth-child(44),
+ul#profile_cards li.staff:nth-child(48),
+ul#profile_cards li.staff:nth-child(52){
+  margin-right: 0 !important;
+}
+
+div.wrap{
+   overflow:hidden;
+}
+
+.header-container #logo_holder span{
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  width: 200px;
+}
+/*html.safari .header-container #logo_holder span{
+  display: none;
+}*/
+#banner_holder{
+  clear: both;
+}
+
+ul#profile_cards .author_content {
+  left: 0;
+  width: 100%;
+  margin-top: 60px;
+  opacity: 0;
+  font-size: 12px;
+}
+
+
+body.single-course #course_time time.updated{
+  margin:0;
+  color:#fff !important;
+}
+body.single-course .accordion-tabs .tab-link:hover{
+  color: #49e1cd;
+}
+body.single-course ul.dots li{
+  list-style: disc;
+  list-style-image: initial;
+  margin-left: 35px;
+
+}
+body.single-course .accordion-tabs{
+  margin: 35px 0;
+}
+body.single-course .accordion-tabs .tab-content{
+  min-height: 300px;
+}
+body.single-course .essential_info{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 2em;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  margin-bottom: 2em;
+  float: right;
+  margin-top: 0.5em;
+  margin-left: 2em;
+
+}
+body.single-course .essential_info h2{
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+body.single-course .essential_info h3{
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+}
+body.single-course .essential_info ul{
+  margin: 0 0 1em 0;
+}
+body.single-course .essential_info ul li{
+  margin: 0;
+}
+body.single-course .essential_info p{
+  margin-bottom: 0;
+}
+body.single-course .essential_info p:last-child{
+  margin-top: 1em;
+}
+
+body.author #card_profile div:nth-child(even){
+  margin-right: 5.357%;
+}
+body.author #card_profile div:nth-child(odd){
+  margin-right: 0;
+}
+#stickyheader ul li#sign_up.active{
+  border-bottom: none !important;
+}
+
+#as_seen_in{
+  position: relative;
+  clear: both;
+}
+#as_seen_in ul{
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: block;
+  width: 470px;
+  float: none;
+}
+
+#as_seen_in ul li { 
+  display: inline; 
+  float: left;
+}
+@media screen and (max-width: 600px){
+  #as_seen_in ul{
+    width: 100%;
+  }
+  #as_seen_in ul li { 
+    display: block; 
+    float: none;
+  }
+  #as_seen_in ul li a{
+    padding: 0;
+  }
+}
+
+#as_seen_in ul li a{
+  display: block;
+  min-height: 200px;
+  min-width: 200px;
+  text-decoration: none;  
+  padding: .2em 1em;
+  color: #fff;
+  background-color: #fff;
+}
+#as_seen_in ul li a:hover{
+  cursor: pointer;
+}
+              
+@media screen and (max-width: 979px){
+  ul#profile_cards li .author_content a h3{
+    color: #fff;
+  }
+  body.contact aside{
+    padding: 0;
+  }
+  #stickyheader{
+    display: block !important;
+  }
+  #stickyheader ul li{
+    display: none;
+    font-size: 11px !important;
+  }
+
+  #stickyheader ul li:first-child{
+    margin-left: 10px !important;
+  }
+  #stickyheader ul li:first-child,
+  #stickyheader ul li:last-child{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #switcher_pad {
+    height: 10px;
+  }
+  body.home ul#term_links li a{
+    font-size: 8px;
+  }
+  .rslides span{
+    padding: 10px;
+  }
+  .rslides h2{
+    font-size: 14px;
+    line-height: 1em;
+  }
+  .rslides p{
+    font-size: 10px;
+    line-height: 1.2em;
+  }
+  body.home div.pad{
+    height: 30px !important;
+  }
+  body.home footer ul#nav_shortcuts li a{
+    font-size: 12px;
+    margin: 5px;
+  }
+  body.home div ul#term_links{
+    margin-bottom: 0 !important;
+  }
+  body.home ul#term_links li {
+    width: 45px;
+    margin-right: 5px;
+  }
+  ul li, ol li{
+    font-size: 14px;
+  }
+  blockquote p{
+    font-size: 14px;
+  }
+  body.single-course #top_course_slider .rslides div.main h1{
+    text-shadow: #303030 1px 1px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #breadcrumbs {
+    margin-bottom: 2em;
+  }  
+}
+
+/*from head*/
+h1{text-decoration: underline;}
+h2{text-decoration: none;}
+article header{margin-top: 1em;}
+body.woocommerce-page .wrap{
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+body.woocommerce-page .main,
+body.cart .main-container .main
+{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  float: none;
+}
+body.cart .main-container .main .default-page,
+body.checkout .main-container .main .default-page{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  float: none;
+}
+ul#nav_shortcuts{
+  max-width: 445px;
+}
+.modal_popup .modal-close{
+  position: fixed;
+}
+.modal_popup .modal-close:after, .modal_popup .modal-close:before{
+  color: #FF0000;
+}
+@media screen and (max-width: 979px){
+  html body div.visiblebox{
+    width: 90% !important;
+    left: 5% !important;
+  }
+  .woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message{
+    font-size: 13px;
+  }
+}
+

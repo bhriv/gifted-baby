@@ -1,0 +1,157 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+/* ----------------------  
+Import Resets
+---------------------- */ 
+
+@import "../vendor/bootstrap/bootstrap";
+@import "../vendor/bootstrap/bootstrap-responsive";
+
+
+/* ----------------------  
+Compass Setup
+---------------------- */  
+
+@import "compass/layout/grid-background";
+// @import "compass/css3";
+// @import "compass/css3/shared";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow"; 
+@import "compass/typography/links";
+@import "compass/typography/lists";
+@import "compass/css3/border-radius";
+@import "compass/css3/columns";
+@import "settings/compass"; 
+ 
+/* ----------------------  
+Custom Definitions - must be loaded in this order
+---------------------- */
+  
+@import "mixins/modularscale";  
+@import "mixins/colors";  
+
+@import "../vendor/bourbon/bourbon";
+@import "settings/neat";
+@import "../vendor/neat/neat";
+@import "../vendor/bitters/grid-settings";
+@import "../vendor/bitters/bitters";
+@import "settings/bitters";
+@import "settings/refills";
+
+
+// @import "../vendor/card/lib/css/card.css";
+ 
+// @import "../vendor/bower_components/tipsy/src/stylesheets/tipsy.css";
+@import "../vendor/bower_components/tipsy/src/stylesheets/tipsy";
+
+/* ----------------------  
+  Base Custom Styles from Framework
+  ---------------------- */
+
+@import "mixins/_mixins"; 
+@import "mixins/_buttons"; 
+ 
+
+/* BUTTONS
+  ============================================================================ */
+@import "../vendor/sassy-buttons/sassybuttons";
+
+
+/* TYPOGRAPHY
+  ============================================================================ */
+@import "mixins/typography";  
+@import "../vendor/font-awesome/scss/font-awesome";  
+
+
+ /* General Layout
+  ============================================================================ */
+@import "mixins/layouts";  
+
+
+/* VENDOR
+  ============================================================================ */
+// @import "../vendor/ResponsiveSlides.js/responsiveslides.css";  
+@import "../vendor/ResponsiveSlides.js/responsiveslides";  
+// @import "settings/vegas";
+
+
+/* ----------------------  
+  Plugin Needs  
+  ---------------------- */
+ 
+@import "mixins/rslides"; 
+@import "mixins/quotes";  
+@import "mixins/profile_cards";  
+@import "mixins/videoWrapper";
+
+/* FORMS
+  ============================================================================ */
+@import "mixins/forms";
+
+
+/* NAVIGATION
+  ============================================================================ */
+@import "mixins/navigation";
+// @import "mixins/star_rating";
+
+
+/* PAGES
+  ============================================================================ */
+// @import "pages/signup";
+@import "pages/all_pages";
+@import "pages/home";
+// @import "pages/single_studio";
+// @import "pages/marker_card";
+// @import "pages/home";
+// @import "pages/login";
+// @import "pages/userpro";
+// @import "pages/book_session";
+// @import "pages/profile";
+// @import "pages/search";
+// @import "pages/advanced-search";
+// @import "pages/single_review";
+// @import "pages/calendar";
+@import "pages/learn";
+@import "pages/fixes";
+
+
+/* PLUGIN STYLES
+  ============================================================================ */
+
+
+// User Pro
+// @import "../wp-content/plugins/userpro/css/userpro.min.css";
+@import "../wp-content/plugins/userpro/css/userpro_min";
+// @import "../wp-content/plugins/userpro/css/lightview/lightview.css";
+@import "../wp-content/plugins/userpro/css/lightview/lightview";
+// @import "../wp-content/plugins/userpro/css/userpro-jquery-ui.css";
+@import "../wp-content/plugins/userpro/css/userpro-jquery-ui";
+// @import "../wp-content/plugins/userpro/skins/default/style.css";
+@import "../wp-content/plugins/userpro/skins/default/style";
+
+
+// Wordpress SEO
+// @import "../wp-content/plugins/wordpress-seo/css/adminbar.min.css";
+@import "../wp-content/plugins/wordpress-seo/css/adminbar_min";
+
+// UserPro Messages
+// @import "../wp-content/plugins/userpro-messaging/css/userpro-msg.css";
+@import "../wp-content/plugins/userpro-messaging/css/userpro-msg";
+// @import "../wp-content/plugins/userpro-messaging/css/jquery.mCustomScrollbar.css";
+@import "../wp-content/plugins/userpro-messaging/css/jquery_mCustomScrollbar";
+
+// Advanced Custom Post Search
+// @import "../wp-content/plugins/advanced-custom-post-search/css/acps-frontend.css";
+@import "../wp-content/plugins/advanced-custom-post-search/css/acps-frontend";
+
+
+/* PRINT ONLY
+  ============================================================================ */
+@import "mixins/_h5bp_print";
+
+
+  

@@ -1,0 +1,90 @@
+// Sassy Buttons
+// Compass extension by Jared Hardy - http://www.jaredhardy.com
+
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+@import "compass/css3/text-shadow"
+@import "compass/css3/images"
+@import "compass/css3/opacity"
+
+@import "sassy-buttons/sassy-button-gradients"
+@import "sassy-buttons/sassy-button-styles"
+@import "sassy-buttons/sassy-button-text"
+@import "sassy-buttons/sassy-button-pseudo-states"
+
+
+// Sassy Button defaults
+// These are the base defaults for the buttons, if you are going to use similar buttons on an entire site changing these
+// can save you some time by calling the sassy button mixin with less arguments.
+
+// Base color of button.
+$sb-base-color: rgba(88, 63, 131, 1) !default
+
+// Optional secondary color for gradient.
+$sb-second-color: rgba(88, 63, 131, 1) !default
+
+// Border radius of button.
+$sb-border-radius: $scale-8 !default
+
+// Padding that gives button structure.
+$sb-padding: $scale-3 $scale2 !default
+
+// Font size.
+$sb-font-size: $scale1 !default
+
+// Button font color.
+$sb-text-color: white !default
+
+// Style of button text, can be "inset" or "raised" or false.
+$sb-text-style: "inset" !default
+
+// Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
+$sb-gradient-style: "simple" !default
+
+// Automatically generate pseudo state styles.
+$sb-pseudo-states: true !default
+
+// Add gradient png for IE 7+
+$sb-ie-support: true !default
+
+
+// Mixing that gets included when calling the sassy-button-structure if you need any
+// styles applied to all your sassy buttons, add it here.
+@mixin sassy-button-default-structure
+  display: inline-block
+  cursor: pointer
+
+// The Sassy Button kitchen sink.
+@mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
+  @include sassy-button-structure($border-radius, $font-size, $sb-padding)
+  @include sassy-button-gradient($gradient-style, $first-color, $second-color, $text-color, $text-style, $auto-states, $ie)
+  @include sassy-firefox-fix
+
+
+// Structure for a sassy button
+@mixin sassy-button-structure($border-radius: $sb-border-radius, $font-size: $sb-font-size, $padding: $sb-padding)
+  font-size: $font-size
+  padding: $padding
+  @include sassy-button-default-structure
+  @include border-radius($border-radius)
+
+
+// Fix for the Firefox padding issue
+@mixin sassy-firefox-fix
+  &::-moz-focus-inner
+    padding: 0 !important
+    margin: -1px !important
+
+// Custom Constants
+$sb-base-color:      rgba(88, 63, 131, 1)      // Base color of your button
+$sb-second-color:    false       // Optional second color of button gradient
+$sb-border-radius:   10px         // Button border radius
+$sb-border-width:    1px          // Button border width
+$sb-padding:         $scale-3 $scale3  // Button padding
+$sb-font-size:       $scale1        // Button font-size
+$sb-line-height:     $scale2        // Button line-height
+$sb-text-color:      white        // Button text color
+$sb-text-style:      "inset"      // Button text shadow style
+$sb-gradient-style:  "simple"      // Button gradient style
+$sb-auto-states:     true         // Automatically create pseudo styles 
+

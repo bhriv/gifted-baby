@@ -1,0 +1,66 @@
+/*Login page */
+body.login {
+  background-color: #f7f7f7; }
+  body.login form {
+    height: 80px;
+    margin-top: 35px;
+    padding: 17.5px;
+    min-height: 340px; }
+  body.login div#login {
+    padding-top: 70px;
+    width: 70%;
+    max-width: 480px; }
+    body.login div#login h1 a {
+      padding-bottom: 30px;
+      width: 152px !important;
+      height: 32px !important;
+      background-image: url("../images/logo.png") !important;
+      background-size: 152px 32px !important; }
+    body.login div#login h1.join_message {
+      margin: 15px 0 5px 10px; }
+    body.login div#login p.join_submessage {
+      margin: 10px 0 0 10px; }
+    body.login div#login p#backtoblog {
+      padding: 5px;
+      margin-left: 25px; }
+  body.login input#user_login {
+    width: 100%; }
+  body.login p.submit {
+    width: 100%; }
+    body.login p.submit input#wp-submit {
+      color: #fff;
+      background-color: #49e1cd;
+      background-image: -webkit-linear-gradient(#49e1cd, #49e1cd);
+      background-image: linear-gradient(#49e1cd, #49e1cd);
+      border-color: #49e1cd;
+      text-shadow: none;
+      font-weight: bold;
+      font-size: 17.5px;
+      padding: 1em;
+      width: 100%;
+      float: none;
+      min-height: 60px;
+      margin-top: 10px;
+      border-radius: 0; }
+    body.login p.submit input#wp-submit:hover {
+      background-color: #f8a81b;
+      background-image: -webkit-linear-gradient(#f8a81b, #f8a81b);
+      background-image: linear-gradient(#f8a81b, #f8a81b);
+      border-color: #f8a81b; }
+  body.login .button-primary {
+    float: left; }
+  body.login p#nav a:first-child {
+    display: none !important; }
+  body.login #login_error,
+  body.login p.message {
+    margin-top: 35px; }
+  body.login form#lostpasswordform p {
+    width: 100%;
+    height: 60px; }
+  body.login form#loginform #wp-social-login-connect-with {
+    display: none !important; }
+
+/*Register Page    */
+ * form#registerform
+ *   height: 580px
+ *   margin-top: 20px */

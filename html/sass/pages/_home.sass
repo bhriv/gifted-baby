@@ -1,0 +1,309 @@
+body.home
+  text-align: center
+  section
+    background-color: $white
+  .main 
+    margin-top: 0
+    padding: 0
+  #upcoming_courses
+    p 
+      button 
+        margin-top: 1em
+
+  article#content_holder
+    clear: both
+    h2 
+      margin: 2em auto
+    @include media(min-width $tablet_v)  
+      width: 70%
+      @include center-block
+  h1 
+    font-size: 3.3em
+    line-height: 1em
+    font-family: $custom-font-bold
+    color: $white
+    margin-bottom: $scale-2
+    @include text-shadow($black 1px 1px 1px)
+    @include media(max-width $tablet_v)
+      font-size: 24px 
+  #main_header
+    padding: 0
+    height: 30px
+    background-color: transparent
+  // #logo-holder
+  //   display: none
+
+  .hero   
+    background: none
+    padding-bottom: 2em
+  .hero-copy
+    h3, p 
+      color: $white
+  .hero .hero-logo img
+    height: 6em
+    margin-bottom: 2em
+    margin-top: 2em
+  .hero .hero-inner
+    @include media(max-width $tablet_v)
+      padding: $scale1
+    p 
+      text-align: center
+      color: $trudio-lime
+  a.hero-logo 
+    img
+      @include media(max-width $tablet_v)
+        width: 180px
+        height: 96px !important
+  #keyword_search
+    max-width: 800px
+    @include center-block
+    button 
+      max-width: 400px
+  #nav
+    ul 
+      li 
+        a 
+          color: $white
+  ul#nav_shortcuts 
+    li 
+      a 
+        color: $white
+        &:hover 
+          color: $brand
+    .js-menu-trigger
+      i
+        color: $white
+        &:hover 
+          color: $brand
+  nav.home_page_nav
+    margin-bottom: $scale1*2
+    z-index: 9999
+    ul 
+      float: none
+      width: 100%
+      max-width: $site_max_width
+      margin: 0 auto
+      li 
+        width: auto
+        margin: $scale1
+        float: left
+        background-color: $brand-gray-green
+        margin-top: 22px
+      li:last-child
+        margin-top: 17.5px
+  
+  ul#term_links
+    width: 100%
+    float: none
+    display: block
+    max-width: 535px
+    height: 130px
+    margin: 0 auto 2em
+    clear: left
+    @include media(max-width $smartphone)
+      margin-bottom: 35px !important
+    li 
+      width: 92px
+      float: left
+      margin-right: 17.5px
+      font-size: 12px
+      color: $brand-gray-light
+      text-align: center
+      opacity: 0.6
+      @include media(max-width $smartphone)
+        width: 60px
+        margin-right: 10px
+      &:first-child
+        @include media(max-width $smartphone)
+          margin-left: 10px
+      a 
+        color: $black
+      img 
+        display: block
+        float: none
+        width: 100%
+      &:last-child
+        margin-right: 0
+    li:hover 
+      opacity: 1
+      a 
+        color: $brand
+
+
+
+  #skill_details
+    max-width: 660px
+    margin: 35px auto 0
+    h3
+      text-transform: uppercase
+      @include media(min-width $smartphone)
+        font-size: 21px
+
+  #skill_switcher
+    display: block
+    width: 100%
+    float: none
+    max-width: 660px
+    min-height: 181px
+    margin: 0 auto
+    li
+      width: 180px
+      height: 180px
+      float: left
+      margin-right: 17.5px
+      border: 1px solid #999
+      border-radius: 50%
+      @include media(max-width $smartphone)
+        float: none
+        margin: 10px auto
+      img
+        @include border-radius(50%)
+        display: none
+      .skill_title p 
+        margin-top: 75px
+        margin-bottom: 0
+    li.turn-on 
+      .skill_title p
+        display: none
+      .skill_title img
+        display: block
+    li:hover 
+      cursor: pointer
+    li:last-child
+      margin-right: 0
+      margin-top: 0
+      @include media(max-width $smartphone)
+        float: none
+        margin: 10px auto
+
+  #love 
+    margin-top: 90px
+    .bigger
+      p 
+        color: $white
+        font-size: 22px
+    header 
+      width: 80%
+      text-align: center
+      i.fa 
+        color: $brand
+      @include center-block
+      h3 
+        font-size: $scale5
+        line-height: $scale3
+        color: $gray
+        @include text-shadow($black 1px 1px 1px) 
+      .squiggle
+        font-size: $scale5
+        margin: $scale3 0
+    
+  #how_it_works
+    margin: $scale1 0
+    h2 
+      small 
+        color: $white
+        font-size: $scale2
+        @include text-shadow($black 1px 1px 0)
+    a
+      color: $white
+      text-decoration: none
+      padding-bottom: $scale-2
+      border-bottom: 1px solid $brand
+      &:hover 
+        color: $brand
+    p   
+      color: $white
+    .card_profile
+      p 
+        color: $black
+      @include media(max-width $smartphone)
+        margin-bottom: 10px
+    .card-copy
+      height: 230px
+      overflow: hidden
+    #step_1
+      @include media(min-width $smartphone + 1)
+        // margin-left: 3.33%
+    #step_2
+      @include media(min-width $smartphone + 1)
+        margin-right: 3.33%
+    #step_3
+      @include media(min-width $smartphone + 1)
+        margin-right: 0
+  #advanced_search
+    margin-top: 10px
+    color: $white
+    font-weight: bold
+    a 
+      color: $trudio-brown
+  #view_studios
+    @extend #advanced_search
+    margin-bottom: $scale1
+    p 
+      color: $white
+      font-weight: bold
+      @include text-shadow($black 1px 1px 0)
+    button 
+      @include sassy-brand
+      @include text-shadow($black 0 1px 0)
+      font-size: $scale1
+      padding: $scale1
+      width: 100%
+  #search_filter
+    margin: 1em auto
+    background-color: transparent
+    form 
+      label 
+        color: $white
+        @include text-shadow($black 0 1px 0)
+      input[type="submit"]
+        margin-top: $scale1
+    .filter_form
+      background-color: #000
+  #search_holder
+    input[type="submit"]
+      width: 15%
+      float: left
+      @include media(max-width $smartphone)
+        width: 100%
+        float: none
+
+#featured_studios  
+  margin-top: $scale6
+  header 
+    text-align: center
+    h4
+      font-family: $helvetica
+      color: $charcoal
+      font-weight: normal
+      font-size: $scale4
+      line-height: $scale1
+      @include text-shadow($gray 1px 1px 1px)  
+      margin: $scale3 0 $scale1
+    p   
+      color: $trudio-brown
+      margin-bottom: $scale3
+  #add_studio
+    text-align: center
+    margin: $scale3 0
+    a 
+      button 
+        font-size: $scale5
+        margin-bottom: $scale-5
+        @include media(max-width $smartphone)
+          font-size: $scale3
+    p 
+      &:last-child
+        margin-bottom: $scale3
+    p.push
+      margin-bottom: $scale6
+  .card_profile
+    background-color: $white
+    &:hover 
+      background-color: $trudio-lime
+      cursor: default
+    .card-header 
+      background-color: $white
+    footer
+      button
+        width: 90%

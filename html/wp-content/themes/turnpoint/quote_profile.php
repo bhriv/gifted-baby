@@ -1,0 +1,1 @@
+<?php $current_post_type = get_post_type( get_the_ID() ); ?>

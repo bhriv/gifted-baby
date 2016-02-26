@@ -1,0 +1,227 @@
+
+/* PHI for Fonts
+  ----------------------- */
+
+// Golden Scale for 16px Font: Optimized Typography for 16px Font in 580px-wide Setting
+// Title: 42px
+// Headlines: 26px
+// Sub-headlines: 20px
+// Primary Text: 16px
+// Secondary Text: 13px
+
+/* Fonts
+  ----------------------- */
+
+// embedded fonts...
+
+@include font-face(pt_light, '/fonts/pt_light')
+@include font-face(pt_bold, '/fonts/pt_bold')
+@include font-face(proximanova-sbold-webfont-webfont, '/fonts/proximanova-sbold-webfont-webfont')
+@include font-face(gotham-light-webfont, '/fonts/gotham-light-webfont')
+
+// stacks...
+$helvetica-stack:      "Helvetica Neue", "Helvetica", Arial, sans-serif
+$custom-font:         "pt_bold", "Helvetica Neue", "Helvetica", Arial, sans-serif
+$custom-font-bold:    "proximanova-sbold-webfont-webfont","Helvetica Neue", "Helvetica", Arial, sans-serif
+$custom-font-thin:    "gotham-light-webfont","Helvetica Neue", "Helvetica", Arial, sans-serif
+
+// base definitions...
+$base-font-family:    $custom-font   !default
+// div { font-family:"Apercu Pro Bold", "Trebuchet MS", Arial, sans-serif; font-weight:bold; font-style:normal; }
+// div { font-family:"Apercu Pro Light", "Trebuchet MS", Arial, sans-serif; font-weight:200; font-style:normal; }
+// div { font-family: "Apercu Pro Regular" font-weight:normal; font-style:normal; }
+
+$base-font-size:      100%              !default
+$base-line-height:    1.5em           !default
+$font-small:          80%               
+$font-smaller:        50%   
+$font-color:          #303030
+$color-header:        $font-color
+
+// font family...
+$font-family-header:  $custom-font-bold !default
+$font-family-nav:     $custom-font      !default
+$font-family-button:  $custom-font      !default
+
+// links
+$link-normal: $brand
+$link-hover: $brand-alt 
+$link-active: $brand
+$link-visited: $brand 
+$link-focus: $brand
+
+
+/* Theme Size 
+  -------------------------- */
+
+$scale1: 17.5px
+$scale1_double: $scale1*2
+$scale1_triple: $scale1*3
+$scale1_half: $scale1/2
+
+/* Paragraphs
+  ----------------------- */
+
+
+.underline
+  text-decoration: underline
+.uppercase
+  text-transform: uppercase
+
+//
+// Body
+// 1em, #303030, regular
+body,
+p, 
+blockquote
+  font-family: $base-font-family
+  font-weight:normal 
+  font-style:normal
+  font-size: 17.5px
+  line-height: $base-line-height
+  color: #303030
+  margin-bottom: 2em
+  -webkit-font-smoothing: none
+  -webkit-font-smoothing: subpixel-antialiased
+  
+small, 
+p small
+  font-size: 80%
+
+time,
+time.updated
+  font-size: 0.74em
+  color: #9f9f9f 
+  text-transform: uppercase
+
+
+/* Links
+  ----------------------- */
+
+a
+  font-family: $base-font-family
+  font-weight:normal 
+  font-style:normal
+  +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    cursor: pointer
+a.cta
+  @include sassy-purple
+  padding: $scale-2 $scale-3
+
+
+/* Headers
+  ----------------------- */
+
+h1, h2, h3, h4, h5
+  // font-family: $custom-font
+  font-family: $custom-font
+  font-weight:normal 
+  font-style:normal
+  color: $color-header
+  margin-bottom: 1em
+  line-height: 1.5em
+
+h1, .h1, p.h1
+  font-family: $custom-font-thin
+  font-size: 2em
+  color: #303030
+  text-decoration: underline
+  &.tax_title
+    em 
+      color: $brand
+  @include media(max-width $tablet_v)
+    font-size: $scale1*1.5   
+
+h2, .h2
+  font-family: $custom-font-thin
+  font-size: 1.6em
+  color: #303030
+  text-decoration: none
+  @include media(max-width $tablet_v)
+    font-size: $scale1
+
+h2.alt-style
+  color: $white
+  text-transform: uppercase
+  text-decoration: underline      
+
+h3, .h3
+  font-size: 1.14em
+  // font-family: $custom-font-bold
+  font-family: $custom-font-bold 
+  font-weight: bold
+  font-style: normal
+  color: #303030
+  text-decoration: underline
+  text-transform: uppercase
+  font-size: 1.6em
+  @include media(max-width $tablet_v)
+    font-size: 16px
+    letter-spacing: 0px
+
+h4, .h4
+  // font-family: $custom-font
+  font-family: $custom-font
+  font-weight:normal 
+  font-style:normal
+  color: #303030
+  font-size: 1em
+  text-transform: uppercase
+  @include media(max-width $tablet_v)
+    font-size: 16px
+    letter-spacing: 0px
+
+h5, .h5 
+  font-family: $custom-font
+  font-weight:normal 
+  font-style:normal
+  font-size: 1.08em
+  color: #6F6F6F
+  @include media(max-width $tablet_v)
+    font-size: 16px
+
+h6, .h6
+  font-family: $custom-font
+  font-weight:normal 
+  font-style:normal
+  font-size: 1em
+  color: #303030
+  text-decoration: underline
+  @include media(max-width $tablet_v)
+    font-size: 16px
+
+big, .big
+  font-size: $scale1*4
+
+h1.jumbo
+  // margin-bottom: $scale-2
+  font-size: $scale1*5
+  font-family: $custom-font-bold
+  line-height: $scale-1
+  // letter-spacing: -5.574px
+
+/* Lists
+  ----------------------- */
+
+ul,
+ol
+  margin: $scale1 0 $scale1
+
+ul li,
+ol li
+  // font-family: $base-font-family
+  font-family: $custom-font
+  font-weight:normal 
+  font-style:normal
+  font-size: $scale1
+  line-height: $base-line-height
+  margin-bottom: 0
+
+aside 
+  h3 
+    color: $brand-gray-light
+    text-transform: uppercase 
+    margin-bottom: 2em 

@@ -1,0 +1,55 @@
+#calendar
+  color: $black
+  thead tr th.fc-day-header,
+  tbody tr th.fc-widget-content
+    font-weight: normal !important
+    font-size: 12px !important
+  table
+    margin: 0 !important
+    padding: 0 !important
+  .fc-toolbar .fc-left,
+  .fc-toolbar .fc-right
+    @include fill-parent
+    h2 
+      float: none
+      text-align: center
+      font-size: 14px
+      text-transform: uppercase
+  .fc-widget-header,
+  .fc-ltr .fc-basic-view .fc-day-number
+    text-align: center !important
+  .fc-today-button
+    display: none
+    visibility: hidden
+  .fc-button-group
+    @include fill-parent
+    margin: 0
+    button 
+      margin: 0
+      &:first-child
+        float: left
+        clear: none
+      &:last-child
+        float: right
+        clear: none
+  .fc-event
+    background-color: $red-brown
+    border-color: $red-brown
+    opacity: 0.1
+    a,span.fc-title 
+      color: $red-brown
+      pointer-events: none !important
+      &:hover 
+        color: $red-brown
+        cursor: default
+  .fc-event[href], 
+  .fc-event.fc-draggable
+    cursor: default !important
+  .fc-basic-view tbody .fc-row
+    min-height: 3em
+.fc th, 
+.fc td,
+.fc-ltr .fc-basic-view .fc-day-number
+  text-align: center !important
+  font-size: 12px !important
+

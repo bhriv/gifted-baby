@@ -1,0 +1,69 @@
+#map
+  position: relative 
+  width: 100% 
+  display: block 
+  overflow: hidden 
+  height: 400px 
+  margin-bottom: 20px
+.marker_card
+  // background-color: $gray
+  width: 285px
+  height: 130px
+  // border: 1px solid $gray-dark
+  ul 
+    margin: 0
+    padding: 0
+    li 
+      margin: 0
+      padding: 0
+      float: left
+      line-height: 10px
+      &:nth-child(1)
+        width: 175px
+        span 
+          &:nth-child(1)
+            margin-bottom: 5px
+          &:nth-child(2)
+            margin-bottom: 5px
+          &:nth-child(3)
+            color: $gray-darker
+            small
+              line-height: 12px
+          &:nth-child(4)
+            color: $gray-darker
+            small
+              line-height: 12px
+          h4 
+            font-size: 14px
+            line-height: 16px
+            margin: 0
+      &:nth-child(2)
+        width: 105px
+        text-align: center
+        font-size: 14px
+        font-weight: bold
+        color: $brand
+        img 
+          width: 100%
+        a 
+          span
+            color: $brand !important
+            padding: $scale-5
+            background-color: #f7f7f7
+            @include border-radius($scale-5)
+            border: 1px solid $trudio-gray-light
+            &:hover
+              background-color: $black
+              
+
+  span 
+    display: block
+    margin-bottom: 10px
+    span 
+      display: inline
+  .marker_rate
+    color: $trudio-brown
+    font-weight: normal
+  .marker_city
+    color: $trudio-brown
+    font-weight: bold

@@ -1,0 +1,43 @@
+.quote_holder
+  position: relative
+  top: 200px
+  min-height: 370px
+  .quote_card
+    width: 30%
+    float: left
+    margin-right: 3%
+    @include media(max-width $smartphone)     
+      width: 100%
+      margin: 1em auto
+      height: 230px
+      clear: both
+      &:last-child 
+        height: 320px
+    .tooltip-item 
+      border: none
+      padding: 0
+      border-radius: 0
+      position: relative
+      margin-bottom: 1.5em
+      .tooltip
+        left: 39%
+        bottom: 120%
+        p 
+          font-size: 14px
+      .tooltip:after
+        left: 15%
+
+    .author_comment 
+      .author_comment-image
+        width: 40%
+        padding: 0
+      img 
+        height: auto
+        width: 100%
+        border-radius: 50%
+        padding: 0
+        background: transparent
+
+
+
+

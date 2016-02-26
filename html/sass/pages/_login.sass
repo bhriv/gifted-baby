@@ -1,0 +1,82 @@
+body.login
+  .header-container 
+    @include box-shadow(white 0 0 0)
+    border-bottom: none
+    padding-top: $scale1
+    #logo-holder
+      @include center-block
+      float: none
+  header#main_header 
+    nav
+      display: none
+  .main 
+    padding-top: $scale1
+  .userpro-body 
+    text-align: center
+  #email_login_header,  
+  #social_login_header  
+    margin-bottom: 10px
+    font-size: 16px
+  .userpro-checkbox-wrap
+    display: none !important
+  input[type="submit"]
+    background-color: #e86562 !important
+    background-image: -webkit-linear-gradient(#e86562, #e86562) !important
+    background-image: linear-gradient(#e86562, #e86562) !important
+    font-weight: bold !important
+    border-color: #e86562 !important
+  // .userpro-tip
+  //   display: none !important
+  //   visibility: hidden !important
+  span.userpro-tip
+    background-image: none !important
+
+  .userpro-social-facebook .userpro-tip
+    display: block !important
+    visibility: visible !important
+
+  // Signup Cleanup
+  .userpro-field-user_email .hide-field
+    display: none !important
+    visibility: hidden !important
+
+  // div.userpro-body div.userpro-field
+  //   display: block !important
+  //   visibility: visible !important
+  // div.userpro-clear
+  //   display: block !important
+  //   visibility: visible !important
+
+body.edit
+  .main-container
+    .userpro-body 
+      text-align: center
+    #email_login_header,  
+    #social_login_header  
+      margin-bottom: 10px
+      font-size: 16px
+    .userpro-checkbox-wrap
+      display: none !important
+    input[type="submit"]
+      background-color: #e86562 !important
+      background-image: -webkit-linear-gradient(#e86562, #e86562) !important
+      background-image: linear-gradient(#e86562, #e86562) !important
+      font-weight: bold !important
+      border-color: #e86562 !important
+      margin-bottom: 30px !important
+      font-size: 24px !important
+      height: 60px !important
+    input[type="button"].red
+      margin-top: 30px !important
+      font-size: 10px
+      background-color: $gray-dark !important
+      background-image: -webkit-linear-gradient($gray-dark, $gray-dark) !important
+      background-image: linear-gradient($gray-dark, $gray-dark) !important
+      font-weight: normal !important
+      border-color: #000 !important
+      color: #000 !important
+    .userpro-tip
+      display: none !important
+      visibility: hidden !important
+
+

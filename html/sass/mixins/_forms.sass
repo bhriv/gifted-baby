@@ -1,0 +1,176 @@
+textarea, input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], select[multiple=multiple]
+  min-height: $scale1*2
+label
+  font-family: $helvetica-stack
+  display: inline-block
+input[type="text"],
+input[type="email"]
+  display: inline-block
+  // @include media(min-width $tablet_v)
+  max-width: 300px
+  padding: 5px
+  min-height: 30px
+  @include border-radius($default-border-radius)
+  border: 1px solid $gray-mid
+  &:focus
+    border-color: $brand
+
+#sign_up a label div.btn,
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button,
+body.woocommerce-page .main .woocommerce table.cart tbody td.actions input[name="proceed"],
+input.checkout-button,
+ul.wpuf-form .wpuf-submit input[type="submit"],
+button,
+a.brand-button,
+.hero-inner button,
+input[type="submit"] 
+  @include sassy-brand
+  padding: 10px 17.5px
+  border: none
+  @include box-shadow(white 0 0 0)
+  font-family: "Apercu Pro Bold", "Trebuchet MS", Arial, sans-serif 
+  font-weight: normal
+  font-style: normal
+  font-size: 1em
+  @include media(max-width $tablet_v)
+    padding: 3px 10px
+    font-weight: normal
+
+// button, 
+#sign_up a label div.btn:hover,
+body.woocommerce-page .main .woocommerce table.cart tbody td.actions input[name="update_cart"],
+button:hover:not(:disabled), 
+input[type="submit"]:hover:not(:disabled),
+button:active:not(:disabled), input[type="submit"]:active:not(:disabled), button:focus:not(:disabled), input[type="submit"]:focus:not(:disabled)   
+  @include linear-gradient($brand-alt, $brand-alt) 
+  @include box-shadow(white 0 0 0)
+  @include text-shadow(transparent 0 0 0)
+
+input[type="submit"].strip_style,
+button[type="submit"].strip_style
+  @include strip-style
+
+button.alt_cta,
+div.btn
+  @include sassy-brand-alt
+  font-weight: normal
+
+input#invite_link
+  min-width: 320px
+
+// Modals
+// .modal.fade.in  
+//   top: 4%
+// .modal_content
+//   display: none
+// .modal-body
+//   max-height: 800px
+// // Bootbox Styling
+// .modal-content  
+//   input[type="text"]
+//     padding: $scale1
+//     max-width: 100%
+//   .current_user
+//     width: 50px
+//     float: right
+//     font-size: $scale-4
+//     text-align: center
+//     margin-right: $scale-5
+//   ul 
+//     width: 100%
+//     margin-left: 0
+//   ul.days_list
+//     li 
+//       +horizontal-list
+//       width: 30%
+//       float: left
+//       // margin-right: $scale2
+//       &:last-child
+//         clear: right
+//   button
+//     float: right
+// Filter Forms
+.acps_keyword_input
+  margin-bottom: $scale1
+  text-align: center
+  padding-top: $scale1
+  // border-top: 1px solid $trudio-gray-light
+  .acps_form_control_wrap
+    label
+      width: auto 
+      margin-right: $scale1
+      float: left
+      font-size: $scale2
+      line-height: $scale2
+      font-weight: normal
+      color: $trudio-gray-dark
+      @include media(max-width $smartphone)
+        font-size: $scale2
+        float: none
+        margin: 0
+      i 
+        margin-right: $scale-5
+      .fa-check-square
+        display: none
+    label.selected 
+      color: $brand
+      .fa-check-square
+        display: inline
+      .fa-minus-square-o
+        display: none
+    // input
+    //   &[type=checkbox]
+    //     display: none
+      // &[type=checkbox]:checked
+ul.wpuf-form li .wpuf-fields input[type=text], 
+ul.wpuf-form li .wpuf-fields input[type=password], 
+ul.wpuf-form li .wpuf-fields input[type=email], 
+ul.wpuf-form li .wpuf-fields input[type=url], 
+ul.wpuf-form li .wpuf-fields input[type=number]
+  height: 30px 
+  font-size: $scale1
+
+#search_holder
+  width: 100%
+  min-height: 50px
+  @include center-block
+  padding: 0 $scale1
+  @include media(max-width $smartphone)
+    width: 100%
+    float: none
+    min-height: 120px
+  form 
+    margin: $scale1 0
+  input
+    float: left
+    @include media(max-width $smartphone)
+      width: 100%
+      float: none
+    @include media(min-width $tablet_h + 1)
+      height: auto
+      min-height: 30px
+  input[type="text"]
+    font-size: 16px
+    min-height: 45px
+    max-width: 84%
+    border-color: $brand
+    @include media(max-width $smartphone)
+      max-width: 100%
+  input[type="submit"]
+    width: 12%
+    @include media(max-width $smartphone)
+      width: 94%
+      float: left
+  .close_btn
+    width: 4%
+    float: left
+    padding: 0.5em
+form.sc-checkout-form
+  input#contact_number    
+    height: 30px
+    margin-bottom: 10px
+form#location_geo_object
+  input[type=text]
+    font-size: 12px  
+    &:focus 
+      font-size: 12px    

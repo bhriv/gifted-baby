@@ -1,0 +1,57 @@
+@mixin sassy-brand
+  @include sassy-button("matte", $scale-4, $scale1, rgba(88, 63, 131, 1), false, $white, $sb-text-style, true)
+  @include linear-gradient($brand, $brand)
+  font-weight: bold
+  color: $white
+  border: none
+  text-transform: uppercase
+  padding: 8.75px 17.5px
+  font-weight: bold
+  @include text-shadow(transparent 0 0 0)
+  @include border-radius(0)
+  @include box-shadow(transparent 0 0 0)
+  &:hover
+    @include linear-gradient($brand-alt, $brand-alt)
+    border: none
+
+@mixin sassy-brand-alt 
+  @include sassy-brand
+  @include linear-gradient($brand-alt, $brand-alt)
+  &:hover
+    @include linear-gradient($brand, $brand)
+    border: none
+
+@mixin strip-style
+  padding: 0    
+  background-image: none
+  background-color: transparent
+  font-weight: normal
+  color: $link-normal
+  text-decoration: none
+  border: none
+  border-radius: 0
+  @include box-shadow(white 0 0 0)
+  @include text-shadow(rgba(gray, 0.2) 0px 0px 0, rgba(gray, 0.2) 0px 0px 0, rgba(gray, 0.2) 0px 0px 0)
+  &:hover
+    color: $link-hover
+    background-image: none
+    background-color: transparent
+    @include box-shadow(white 0 0 0)
+  &:focus
+    color: $link-hover
+    background-image: none
+    background-color: transparent
+    @include box-shadow(white 0 0 0) 
+
+@mixin sassy-purple
+  @include sassy-brand
+@mixin sassy-grey
+  @include sassy-purple
+  @include linear-gradient($trudio-gray-green, $trudio-gray-green)
+  @include box-shadow(white 0 0 0)
+  border-color: $trudio-gray-green
+  padding: $scale-1 $scale2
+
+@mixin sassy-brown
+  @include sassy-grey
+  @include linear-gradient($trudio-brown, $trudio-brown)

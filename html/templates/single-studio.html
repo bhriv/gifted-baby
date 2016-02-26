@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Green Room - Trud.io</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/vendor/initializr/css/normalize.min.css">
+        <link rel="stylesheet" href="/vendor/initializr/css/main.css">
+        
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css" href="/vendor/datetimepicker/DateTimePicker.css" />
+        <!--[if lt IE 9]>
+          <link rel="stylesheet" type="text/css" href="/vendor/datetimepicker/DateTimePicker-ltie9.css" />
+          <script type="text/javascript" src="/vendor/datetimepicker/DateTimePicker-ltie9.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="/vendor/fancybox/source/jquery.fancybox.css" media="screen" />
+        
+        <link rel="stylesheet" href="/css/screen.css">
+
+        <script src="/vendor/initializr/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body class="single-studio">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header id="main_header" class="wrapper clearfix">
+              <div id="logo-holder">
+                <a class="logolink" href="/index.html">
+                  <img src="/static/img/logo.png">
+                </a>
+              </div>
+              <!-- <div class="current_user">
+                <img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c0.4.50.50/p50x50/941279_10151630651736706_663522176_n.jpg" alt="...">
+                Logged in as BHRIV
+              </div> -->
+              <nav>
+                  <ul>
+                      <li><a href="/templates/bitters.html">Find a Studio</a></li>
+                      <li><a href="/templates/refills.html">Add Your Studio</a></li>
+                      <li><a href="/templates/article.html">Login / Signup</a></li>
+                  </ul>
+              </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+              <nav>
+                <ul>
+                  <li><a href="#description">Description</a></li>
+                  <li><a href="#description">Listen</a></li>
+                  <li><a href="#description">Credits</a></li>
+                  <li><a href="#description">Images</a></li>
+                  <li><a href="#description">Tweets</a></li>
+                  <li><a href="#description">Reviews</a></li>
+                </ul>
+              </nav>
+              <section class="slider_holder">
+                <div class="studio_overview">
+                  <h1>Touchtone Studios</h1>
+                  <ul class="services_list">
+                    <li>Mixing &middot;</li>
+                    <li>Mastering &middot;</li>
+                    <li>Recording &middot;</li>
+                    <li class="studio_genre">Rock</li>
+                    <li class="studio_location"><i class="fa fa-map-marker"></i> Los Angeles</li> <!-- <span>CA</span> -->
+                  </ul>
+                  <a id="book_a_session" class="modal_trigger"><button>Book Session</button></a>
+                </div>
+                
+                <div id="professional_slider">
+                  <ul class="rslides">
+                    <li>
+                      <img src="/images/pro1.jpg" alt="">
+                    </li>
+                    <!-- <li>
+                      <img src="/images/pro2.jpg" alt="">
+                      <h2>Professional Name 2</h2>
+                    </li> -->
+                  </ul>
+                </div>
+              </section>
+
+              <article>
+                <section id="description">
+                  <h2>Description</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur lor sit amet, consectetur adipiscing elit. Aliquam sodal. 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur lor sit amet, consectetur adipiscing elit. Aliquam sodal. 
+                  </p>
+                  <a id="read_more">Read More...</a>
+                </section>
+                <section>
+                    <h2>Listen</h2>
+                    <p><iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/44055236&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></p>
+                </section>
+                <section>
+                    <h2>Credits</h2>
+                    <ul class="nav nav-pills">
+                      <li class=""><a href="#">Backstreet Boys</a></li>
+                      <li><a href="#">Ghostbusters</a></li>
+                      <li><a href="#">Emblem3</a></li>
+                      <li><a href="#">Jeff Buckley</a></li>
+                      <li><a href="#">Nico Vega</a></li>
+                      <li><a href="#">Calling Cars</a></li>
+                      <li><a href="#">Mikey Wax</a></li>
+                      <li><a href="#">XX</a></li>
+                      <li><a href="#">Tits McGhee</a></li>
+                    </ul>
+                </section>
+                <section id="studio_gallery">
+                    <h2>@mikegreen</h2>
+                    <p>
+                      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8507/8454547519_f8116520e1_b.jpg" title="Ayvalık, Turkey (Nejdet Düzen)">
+                        <img src="http://farm9.staticflickr.com/8507/8454547519_f8116520e1_m.jpg" alt="" />
+                      </a>
+                      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg" title="Sicilian Scratches   erice (italianoadoravel on/off coming back)">
+                        <img src="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_m.jpg" alt="" />
+                      </a>
+                      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8481/8215602321_69d9939b8b_b.jpg" title="The Trail (Msjunior-Check out my galleries)">
+                        <img src="http://farm9.staticflickr.com/8481/8215602321_69d9939b8b_m.jpg" alt="" />
+                      </a>
+                      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8200/8220393833_e52cabfe80_b.jpg" title="Trees (Joerg Marx)">
+                        <img src="http://farm9.staticflickr.com/8200/8220393833_e52cabfe80_m.jpg" alt="" />
+                      </a>
+                      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg" title="Sicilian Scratches   erice (italianoadoravel on/off coming back)">
+                        <img src="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_m.jpg" alt="" />
+                      </a>
+                    </p>
+                </section>
+
+                <section>
+                  <h2>@mikeg</h2>
+                  <div class="entry-content">
+                    <a class="twitter-timeline" href="https://twitter.com/VirtualUnrest/lists/vuwebsitefeed" data-widget-id="459189113636151296">Tweets from https://twitter.com/VirtualUnrest/lists/vuwebsitefeed</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                </section>
+
+              <!--   <section>
+                  <h2>Videos</h2>
+                  <div class="videoWrapper">
+                    <iframe width="640" height="360" src="//www.youtube.com/embed/wBvC446s75I?list=UUazBLv32tH4vdigL_Bic1OQ" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </section> -->
+
+                <section id="reviews">
+                  <h2>Reviews</h2>
+                  <h4>Average Rating: <i class="fa fa-star "></i><i class="fa fa-star "></i><i class="fa fa-star "></i><i class="fa fa-star-half-empty "></i> </h4>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c0.4.50.50/p50x50/941279_10151630651736706_663522176_n.jpg" alt="...">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Amazing Mix</h4>
+                      <p>I was so impressed with how it all turned out. It was amazing!</p>
+                      <footer><span class="author">BHRIV</span></footer>
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p100x100/1016756_10202304867277046_154419232_n.jpg" alt="...">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">I will be back for sure</h4>
+                      <p>My dad was so happy with the CD I recorded for him that he is going to sell his third Porche and fund my album with Mike. So cool!!!!</p>
+                      <footer><span class="author">Rich Girl</span></footer>
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c25.0.100.100/p100x100/1505104_10152737141566978_1922733339_n.jpg" alt="...">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Golden Ears</h4>
+                      <p>I have been trying to find someone that really 'gets' my sound for years. I finally found Mike on Trudio and I won't go to anyone else. This has been the perfect start to my new recording career.</p>
+                      <footer><span class="author">Milf that Rocks</span></footer>
+                    </div>
+                  </div>
+                  
+                  <h3> <i class="fa fa-comments-o"></i> <a id="submit_a_review" class="modal_trigger">Submit a Review</a></h3>
+                  <h3> <i class="fa fa-comments-o"></i> <a id="submit_a_review" class="modal_trigger">Report a Problem</a></h3>
+                  <div id="submit_a_review" class="modal_content">
+                    <h2>
+                      <label for="text_area">Submit a Review</label>
+                      <div class="current_user">
+                        <img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c0.4.50.50/p50x50/941279_10151630651736706_663522176_n.jpg" alt="...">
+                        <span>BHRIV</span>
+                      </div>
+                    </h2>
+                      <p>
+                        
+                      </p>
+                      <p>
+                        <textarea id="text_area" placeholder="Write a review...."></textarea>
+                      </p>
+                      <p>
+                        <label for="number_of_days">Would you recommend that others book a session here?</label>
+                        <select name="select_element">
+                          <option value="1">Definitely - my session was awesome</option>
+                          <option value="2">Probably - my session was really good</option>
+                          <option value="3">Maybe - my session was ok</option>
+                          <option value="3">Probably Not - my session wasn't ok</option>
+                          <option value="3">Never - my session was terrible</option>
+                        </select>
+                      </p>
+                      <p>
+                        <button>Submit Review</button>
+                      </p>
+                  </div>
+
+                </section>
+
+                <section>
+                  <h2>Links</h2>
+                  <p>
+                    <ul class="social_media">
+                      <li><i class="fa fa-facebook-square"></i></li>
+                      <li><i class="fa fa-twitter-square"></i></li>
+                      <li><i class="fa fa-youtube-square"></i></li>
+                      <li><i class="fa fa-soundcloud"></i></li>
+                    </ul>
+                   <!--  <ul>
+                      <li>www.someband.com</li>
+                      <li>www.mylink.com</li>
+                      <li>www.checkoutthis.com</li>
+                    </ul> -->
+                  </p>
+                </section>
+
+
+            </article>
+
+              <aside style="color: #000 !important;">
+                <div class="">
+                  <h2>Booking Details</h2>
+                  <h4>Availablility</h4>
+                  <img src="/static/img/ical.png">
+                  <div class="prices">
+                    <p>
+                      <ul>
+                        <li><span>Day Rate:</span> $550</li>
+                        <li><span>Min # of Days:</span> 1</li>
+                        <li><span>Terms:</span> Moderate</li>
+                      </ul>
+                    </p>  
+                  </div>
+                  <a id="book_a_session" class="modal_trigger"><button>Book Session</button></a>
+                  <div id="book_a_session" class="modal_content">
+                    <div id="session_details">
+                      <h2>Session Details</label></h2>
+                      <ul>
+                        <!-- <li>
+                          <label for="name">Your Name</label>
+                          <input type="text" id="text_field" placeholder="John Smith"/>
+                        </li> -->
+                        <li>
+                          <label for="name">Artist Name</label>
+                          <input type="text" id="text_field" placeholder="The Beatles" />
+                        </li>
+                        <li>
+                          <label for="style">Genre</label>
+                          <select name="select_element">
+                            <option value="1">Rock</option>
+                            <option value="2">Pop</option>
+                            <option value="3">HipHop/RnB</option>
+                            <option value="3">Country</option>
+                            <option value="3">Electronic</option>
+                          </select>
+                        </li>
+                      </ul>
+
+                      <p>
+                        <label for="name">Link to Demo or Previous Recordings</label>
+                        <br>
+                        <input type="text" id="text_field" placeholder="https://soundcloud.com/you/songname"/>
+                      </p>
+                      <p>
+                        <label for="checkboxes">Services Needed</label><br>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Everything <br>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Recording
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Mixing
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Mastering
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" /> Editing 
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" /> Tracking
+                      </p>
+                      <p>
+                        <ul class="days_list">
+                          <li>
+                            <label for="number_of_days">Number of Songs</label>
+                            <select name="select_element">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="3">5</option>
+                              <option value="3">6</option>
+                              <option value="3">7</option>
+                              <option value="3">8</option>
+                              <option value="3">9</option>
+                              <option value="3">10</option>
+                              <option value="3">11</option>
+                              <option value="3">12</option>
+                              <option value="3">13</option>
+                              <option value="3">14</option>
+                              <option value="3">15</option>
+                            </select>
+                          </li>
+                          <li>
+                              <label for="number_of_days">Number of Days</label>
+                              <select name="select_element">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">5</option>
+                                <option value="3">6</option>
+                                <option value="3">7</option>
+                                <option value="3">8</option>
+                                <option value="3">9</option>
+                                <option value="3">10</option>
+                                <option value="3">14</option>
+                                <option value="3">21</option>
+                                <option value="3">30</option>
+                              </select>
+                          </li>
+                          <li>
+                            <div id="dtBox"></div>
+                            <label for="start_date">Start Date</label>
+                            <input id="date_picker" type="date" name="event_start_at" placeholder="session start date" value="]" class="form-control">
+                          </li>
+                        </ul>
+                      </p>
+                      
+                      <div class="clearfix"></div>
+                      <!-- <p>
+                        <label for="radio_buttons">Do you require writing/preproduction?</label>
+                        <label>
+                          <input type="radio" class="radio" name="radio_button" value="radio_1" /> Yes
+                        </label>
+                        <label>
+                          <input type="radio" class="radio" name="radio_button" value="radio_2" /> No
+                        </label>
+                      </p> -->
+                      <p>
+                        <label for="text_area">Message</label>
+                        <textarea id="text_area" placeholder="Additional information about you and your session..."></textarea>
+                      </p>
+                      <p> <a id="continue_booking"><button>Continue</button></a></p>
+
+                    </div>
+                  </div>
+
+                  <footer>
+                    <a id="ask_a_question" class="modal_trigger"><h4><i class="fa fa-envelope"></i> Ask a Question</h4></a>
+                    <div id="ask_a_question" class="modal_content">
+                      <h2><label for="text_area">Ask a Question</label></h2>
+                      <p>
+                        <textarea id="text_area" placeholder="Type your question...."></textarea>
+                      </p>
+                      <p><button>Send Question</button></p>
+                    </div>
+
+                    <p><a id="send_money" class="modal_trigger">Send Money</a></p>
+                    <div id="send_money" class="modal_content">
+                      <h2>Send Money</h2>
+                      <!-- <p><strong>Studio Day Rate: </strong>$500</p>
+                      <p><strong># of Days: </strong>3</p>
+                      <p><strong>Total: </strong>$1500</p> -->
+                      <p>
+                        <br>
+                        <label for="text_area">Message</label>
+                        <textarea id="text_area" placeholder="What is this payment for..."></textarea>
+                      </p>
+                      <h5>Payment Details</label></h5>
+                      <ul>
+                        <li>
+                          <label for="name">Name on Card</label>
+                          <input type="text" id="text_field" placeholder="John H Smith"/>
+                        </li>
+                        <li>
+                          <label for="name">Card Number</label>
+                          <input type="text" id="text_field" placeholder="1234 5678 9101 0000"/>
+                        </li>
+                        <li>
+                          <label for="name">Amount</label>
+                          <input type="text" id="text_field" placeholder="100.00"/>
+                        </li>
+                      </ul>
+                      
+                      <p><a id="continue_booking"><button>Pay Now</button></a></p>
+                    </div>
+                  </footer>
+                </div>
+
+              </aside>
+
+
+              <div class="clearfix"></div>
+              
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <!-- <h3>footer</h3> -->
+                <div class="addthis_toolbox addthis_default_style ">
+                  <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                  <a class="addthis_button_tweet"></a>
+                  <!-- <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a> -->
+                  <a class="addthis_counter addthis_pill_style"></a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="/vendor/initializr/js/main.js"></script>
+        <script src="/vendor/ResponsiveSlides.js/responsiveslides.min.js"></script>
+        
+        <script type="text/javascript" src="/static/bootbox/bootbox.min.js"></script>
+        <script type="text/javascript" src="/static/bootbox/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="/vendor/datetimepicker/DateTimePicker.js"></script>
+        
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
+        
+        <script type="text/javascript" src="/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+
+        <script type="text/javascript">
+
+          $(".modal_trigger").click(function() {
+            var triggered_modal_id = $(this).attr("id");
+            // alert(triggered_modal_id);
+            var triggered_modal_content = $('#' +triggered_modal_id +'.modal_content').html();
+            bootbox.dialog({
+                message: triggered_modal_content
+              });
+          });
+
+          $("#read_more").click(function() {
+            $("section#description").animate({height:'400'}, 500);
+            $(this).toggle();
+          });
+
+
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+          var addthis_config = {"data_track_addressbar":false};
+        </script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5350667b414571b2"></script>
+
+    </body>
+

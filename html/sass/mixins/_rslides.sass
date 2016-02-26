@@ -1,0 +1,106 @@
+.rslides
+  position: relative
+  list-style: none
+  overflow: hidden
+  width: 100%
+  padding: 0
+  margin: 0
+  z-index: 0
+  li
+    -webkit-backface-visibility: hidden
+    position: absolute
+    display: none
+    width: 100%
+    left: 0
+    top: 0
+    &:first-child
+      position: relative
+      display: block
+      float: left
+  img
+    display: block
+    height: auto
+    float: left
+    width: 100%
+    border: 0
+  div.main 
+    position: absolute
+    bottom: 70px
+    max-width: $site_max_width
+    margin: 0 auto
+    @include media(max-width $smartphone)
+      width: 100%
+      left: 0
+      bottom: 0
+  span
+    position: absolute
+    text-align: left
+    bottom: 0
+    left: 0
+    // border: 1px solid #f7f7f7
+    padding: 17.5px
+    width: auto
+    margin-right: 0
+    @include background('white-shade-75.png')
+    background-repeat: repeat
+    @include media(max-width $tablet_v)
+      bottom: $scale1
+      width: 80%
+      font-size: 14px
+    @include media(max-width $smartphone)
+      font-size: 14px
+      width: 100%
+      left: 0
+      bottom: 0
+      margin-right: 0
+  h1
+    margin-bottom: 0
+    @include media(max-width $tablet_v)
+      font-size: 30px
+    @include media(max-width $smartphone)
+      font-size: 24px
+  h2
+    margin-bottom: 0
+    @include media(max-width $tablet_v)
+      font-size: 24px
+  p 
+    margin-bottom: 0
+    @include media(max-width $smartphone)
+      font-size: 14px
+  button.alt,
+  div.btn
+    @include sassy-brand-alt
+    font-weight: normal
+
+a.rslides_nav 
+  visibility: hidden
+  position: absolute
+  top: 50%
+  width: 51px
+  height: 51px
+  text-indent: -99999px
+  @include background('left-arr.png')
+  @include media(max-width $smartphone)
+    // visibility: visible
+    width: 25px
+    height: 25px
+    @include background-size(25px 25px)
+  &.prev
+    left: 0
+  &.next
+    right: 0
+    @include background('right-arr.png')
+    @include media(max-width $smartphone)
+      @include background-size(25px 25px)
+#map_results
+  a.rslides_nav
+    @include media(min-width $tablet_v)
+      visibility: visible
+      width: 25px
+      height: 25px
+      top: 33%
+      @include background-size(25px 25px)
+#top_slider, .card_deck #slider_holder
+  &:hover
+    a.rslides_nav
+      visibility: visible

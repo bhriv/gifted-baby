@@ -1,0 +1,88 @@
+// Archives
+body.post-type-archive 
+  aside.sidebar
+    .card_profile
+      margin-bottom: 1.5em
+      min-height: 100%
+      .card_profile-copy
+        display: none
+        .card_profile-image
+          display: none
+      &.podcast
+        .card_profile-image
+          display: none
+    h3.podcast_title
+      margin-top: 2em
+
+body.podcasts,
+body.articles,
+body.single-podcast,
+body.single-article,
+body.info-for-students,
+body.pitch-us-a-course
+  aside.sidebar
+    .card_profile
+      margin-bottom: 1.5em
+      min-height: 100%
+      &.article
+        .card_profile-image
+          display: none
+      &.podcast
+        .card_profile-image
+          display: none
+    h3.podcast_title
+      margin-top: 2em
+
+body.write-for-us
+  aside.sidebar
+    .card_profile
+      margin-bottom: 1.5em
+      min-height: 100%
+      &.podcast
+        .card_profile-image
+          display: none
+    h3.podcast_title
+      margin-top: 2em
+
+body.info-for-students,
+body.pitch-us-a-course
+  aside.sidebar
+    .card_profile
+      &.article
+        .card_profile-image
+          display: block
+
+body.single-course 
+  #top_course_slider
+    .rslides 
+      div.main 
+        background-image: none
+        background-color: transparent
+        h1,
+        h2,
+        p
+          color: $white
+          text-align: center
+          @include text-shadow($black 1px 1px 0)
+        h1 
+          @include text-shadow($black 2px 1px 0)
+          @include media(min-width $laptop)
+            font-size: 4em
+            line-height: 1em
+            margin-bottom: 35px
+      .action_buttons
+        text-align: center
+        margin-top: 1em
+body.cart
+  .woocommerce
+    input[name="coupon_code"],
+    input[name="apply_coupon"]
+      display: none
+body.checkout 
+  &.woocommerce-page 
+    #payment #place_order  
+      padding: 0.75em
+      max-width: 350px
+    .col-2  
+      display: none
+

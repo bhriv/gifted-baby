@@ -1,0 +1,886 @@
+// Media Query Breakpoints
+
+$site_max_width: 1024px
+$site_holder_max_width: 1600px
+
+$phone: 480px
+// $smartphone: 660px
+$smartphone: 979px
+$tablet_v: 768px
+$tablet_h: 979px
+$laptop: $site_max_width
+$desktop: 1200px
+$bigdaddy: 1599px
+
+
+// Shared sidebar / widths
+//  archive-article, single-article
+// Reset Cleanup
+.clearfix
+  clear: both
+  &.push 
+    min-height: 35px
+    clear: both
+    @include media(max-width $smartphone)
+      min-height: 17.5px
+html
+  background-repeat: repeat
+  padding: 0
+  margin: 0
+  background-color: $white
+  body 
+    padding: 0
+    width: 100%
+    max-width: $site_holder_max_width
+    @include center-block
+    @include media(min-width $tablet_v)
+      padding: 0
+    .footer-container
+      border-top: none
+      margin-top: 0
+      background-color: $brand-aqua
+      color: $white
+      padding: 2em 0
+      font-size: 17.5px
+      footer 
+        color: $white
+        text-align: left
+        a 
+          color: $white
+          &:hover 
+            color: $brand-alt
+            text-decoration: none 
+  .main 
+    aside
+      background-color: $white
+      border-top: none
+      max-width: $site_holder_max_width/4
+      @include box-shadow(0 5px 10px #aaa)
+    aside#favorites
+      @include box-shadow(0 5px 10px #fff)
+      form 
+        margin: 0
+      button 
+        @include sassy-brown
+        margin-bottom: 0
+        &:hover 
+          background-color: #777
+          i 
+            color: $brand
+  .row-fluid 
+    .span3
+      @include media(max-width $tablet_v)
+        width: 50%
+        float: left
+        margin-left: 0 !important
+        min-height: 155px      
+
+.wrapper 
+  margin-top: 30px 
+  @include media(min-width $laptop)
+    max-width: 1000px
+    @include center-block
+  @include media(max-width $tablet_v)
+    width: 100%
+    margin: 0 auto
+  @include media(min-width $desktop + 1)
+    width: 1100px
+    margin: 0 auto
+  @include media(min-width $bigdaddy + 1)
+    width: 1600px
+    margin: 0 auto
+
+
+
+// MOBILE FIRST
+
+#skill_switcher
+  li
+    @include media(max-width $smartphone)
+      float: none
+      margin: 10px auto 
+    &:last-child 
+      float: none
+      margin: 10px auto 
+// Main Container 
+
+body.home,
+body.courses
+  .wrap 
+    .main-container
+      margin-top: 0 
+
+.main-container
+  max-width: $site_max_width
+  margin: 0 auto
+  @include media(max-width $tablet_h)
+    padding: 17.5px  
+  @include media(max-width $smartphone)
+    padding: 10px    
+.wrap 
+  .main-container
+    margin-top: 3em 
+    @include media(max-width $smartphone)
+      margin-top: 1em    
+
+.main
+  @include media(min-width $tablet_h)
+    // @include span-columns(9)
+    width: 689px
+    margin-right: 35px
+    float: left
+  &.full-width
+    width: 100%
+    float: none
+    margin: 0 auto
+
+body.single-course,    
+body.courses,
+body.home,
+// body.category,
+body.authors,
+body.home
+  .main 
+    @include fill-parent  
+    padding: 0
+    .card_profile
+      max-width: 420px
+      @include media(max-width $smartphone)
+        width: 100%
+        margin: 1em auto
+  .card_profile:nth-child(3n+1)
+    clear: none
+  .card_profile:nth-child(4n+1)
+    clear: none
+
+aside 
+  overflow: hidden
+  margin-right: 0
+  margin-left: 0
+  width: 300px
+  float: left
+  @include media(max-width $smartphone)
+    width: 100%
+    float: none
+    padding: 10px
+    .card_profile
+      clear: both
+  h3 
+    font-size: 17.5px
+    clear: both
+  &.sidebar
+    .card_profile
+      @include media(max-width $smartphone)
+        width: 100%
+        max-width: 90%
+        float: none
+        margin: 0 auto 3em auto
+        z-index: 1
+      
+  
+// Cards
+
+body.articles,
+body.courses,
+body.podcasts
+  .card_profile
+    max-width: 420px 
+    @include media(max-width $smartphone)
+      width: 100%
+      margin: 1em auto
+  .card_profile:nth-child(3n+1)
+    clear: none
+  .card_profile:nth-child(4n+1)
+    clear: none
+
+body.podcasts 
+  .card_profile
+    width: 47%
+    margin-right: 5%
+  .card_profile:nth-child(odd)
+    margin-right: 0
+
+body.articles
+  .card_profile
+    width: 47%
+    margin-right: 0
+  .card_profile:nth-child(odd)
+    margin-right: 5%
+
+body.about-us .author_comment .author_comment-image img
+  @include border-radius(0)
+
+
+// Header        
+
+#stickyheader
+  @include media(max-width $smartphone)
+    display: none
+.page-header
+  padding-bottom: 0
+  border-bottom: none
+
+.header-container
+  background-color: $white
+  padding: $scale1*0.5 0 0
+  border-bottom: 1px solid #f5f5f5
+  .centered-navigation
+    height: auto    
+    max-width: 100%
+    margin: 0 auto
+    background-color: $white
+    ul
+      max-width: 600px
+      float: right
+      margin: 0
+      // clear: none
+      li.nav-link:last-child
+        padding-right: 0
+    li.more.nav-link > a
+      @include media($max-width $tablet_v)
+        display: block !important
+  #logo_holder  
+    width: 315px
+    display: block
+    float: left
+    margin: 3px 0 0
+    img 
+      width: 70px 
+      float: left
+      margin-right: 15px
+    span 
+      width: 220px
+      float: left
+      margin-top: 17.5px
+      text-transform: uppercase
+      color: #c7c7c7
+
+    @include media(min-width $tablet_v)
+      margin-left: 0
+      margin-bottom: 0  
+    @include media(max-width $smartphone)
+      width: 100px
+      span 
+        display: none
+header#main_header
+  background-color: $white
+  padding: 0
+  position: relative
+  padding: $scale1
+  nav  
+    ul 
+      background: none
+.expander a.expander-toggle
+  @include media(max-width $smartphone)      
+    font-size: 14px
+.utility
+  position: relative
+  width: 100%
+  .user_profile_card
+    margin-right: $scale-5
+  .user_profile_card
+    width: 20px
+    float: left
+    img 
+      width: 20px
+      max-width: 20px
+      margin-top: 2px
+      border: 1px solid $purple-dark
+      @include border-radius(2px)
+    span 
+      position: relative
+      top: -3px
+      display: none
+  .profile_holder 
+    margin-left: 0
+    padding-left: 0
+  #small_logo
+    width: 119px
+    height: 40px
+    @include center-block
+    // @include retina-image('/images/gigroom_logo_beta', 119px 40px)
+    &:hover
+      opacity: 0.8
+    h1,h3 
+      text-indent: -9999px
+#breadcrumbs
+  font-size: 12px
+  border-top: 1px solid $gray-light
+  border-bottom: 1px solid $gray-light
+  padding: $scale1
+  margin: 0
+  @include media(min-width $tablet_v)
+    padding: 0.5em 0
+    
+// Logo
+
+#main_logo_link
+  img
+    margin-bottom: 3em 
+
+
+// Footer
+ 
+#sub_footer
+  background-color: $brand-aqua  
+  text-align: center
+  p 
+    color: $white  
+    font-size: 80%
+#credits 
+  p 
+    color: $white
+    text-align: right
+    a 
+      color: $white
+      font-weight: bold             
+hr 
+  margin: $scale1 0    
+
+
+// Page Layouts
+
+blockquote 
+  min-height: 100px
+  p 
+    img 
+      @include border-radius(50%)
+      max-width: 100px
+      float: left
+      margin-right: 1em
+#left_side,
+#right_side
+  footer 
+    padding: 0 $scale1
+    text-align: center
+    p 
+      color: $trudio-brown
+      line-height: 16px
+    h5 
+      margin-bottom: 0
+  @include media(min-width $tablet_v)
+    width: 50%
+    float: left
+    height: auto
+#right_side
+  @include media(min-width $tablet_v)
+    padding-left: 30px
+
+.outlined
+  padding: $scale1*2
+  margin: 0
+  border: none
+  @include outlined-box
+  @include media(max-width $smartphone)
+    padding: 10px
+#back_up
+  text-align: center         
+aside 
+  h2,p.h2 
+    color: $gray-darker
+    font-size: 24px 
+.default-page
+  h1  
+    text-decoration: underline
+
+// Current User
+
+.current_user
+  width: 50px
+  float: right
+  font-size: $scale-4
+  text-align: center
+  margin-right: $scale-5
+
+header 
+  .current_user  
+    position: absolute
+    top: 5px 
+    right: 0
+    img 
+      width: 25px
+      height: 25px
+
+.tax_title
+  float: left
+  width: auto
+  margin: 10px 0
+#filter_view
+  float: right
+  margin: 10px 0
+  @include media(max-width $tablet_v)
+    margin-top: 0
+
+// Tweets 
+
+#latest_tweet
+  ul 
+    margin-left: 0
+    li 
+      overflow: hidden
+      p 
+        margin-bottom: 0
+        font-size: 12px
+        line-height: 14px
+        a 
+          color: $trudio-brown
+      p.interact
+        margin-bottom: $scale1
+        border-bottom: 1px solid $gray-light  
+        a 
+          margin-right: $scale-5
+          font-size: 12px
+          width: 125px
+           
+
+// AddThis
+
+.addthis_toolbox  
+  float: right  
+.addthis_toolbox
+  max-width: 450px
+  float: left
+  a 
+    text-align: center
+.addthis_button_tweet  
+  width: 90px !important
+
+
+// Mailchimp       
+
+#mc_embed_signup    
+  input[type="submit"]
+    margin-top: 0
+
+
+// Taxonomy Terms
+
+ul.key_terms
+  width: 100%
+  display: block
+  margin: 0
+  li 
+    width: 50%
+    float: left 
+    i 
+      color: $brand
+    h2 
+      font-size: 16px
+      line-height: 16px
+      margin: 0 0 $scale-5 0
+      color: $black
+      font-weight: normal
+      a 
+        color: $black
+        font-weight: normal
+        &:hover
+          text-decoration: underline
+          color: $brand
+
+
+// Map Styles
+
+#map 
+  display: block
+  min-height: 700px
+  .leaflet-popup-content
+    min-height: 300px !important
+  .leaflet-popup-close-button
+    top: -5px !important
+    right: -5px !important
+
+#map_results
+  text-align: center
+  a 
+    h1 
+      margin-top: 0
+  p 
+    color: $trudio-brown    
+  h2 
+    font-family: $custom-font
+    color: $charcoal
+    margin-bottom: 0
+  #search_holder 
+    padding: 0
+    input[type="submit"]
+      width: 16%
+      padding: 14px 10px
+
+
+// Cards
+
+.card_deck
+  @include media(min-width $tablet_v +1 )
+    padding: $scale-1
+.card_profile
+  margin-right: 2.35765%
+  width: 30% 
+  max-width: 320px
+  float: left
+  min-height: 240px
+  position: relative
+  cursor: default
+  background-color: $white
+  @include media(max-width $smartphone)
+    max-width: 100% !important
+    width: 100% !important
+    float: none !important
+    margin-left: auto !important
+    margin-right: auto !important
+    @include center-block
+    min-height: 100px
+    clear: both
+  &:last-child 
+    margin-right: 0 
+    @include media(max-width $smartphone)
+      margin-right: auto
+  &:nth-child(3n+1) 
+    clear: left 
+    @include media(max-width $smartphone)
+      clear: both
+  &:nth-child(4n+1) 
+    clear: none
+    @include media(max-width $smartphone)
+      clear: both
+  p 
+    font-size: 14px
+    color: $black
+    margin-bottom: 0.5em
+    text-align: left
+  h1,
+  p.h1
+    font-family: $custom-font-thin
+    font-size: $scale1
+    line-height: $scale1
+    text-decoration: underline
+    margin-top: 0.5em
+    font-weight: normal
+    a 
+      color: $black
+  p.author
+    color: $brand-gray-light
+    font-size: 13px
+    &.date 
+      text-transform: uppercase
+  &:hover .card-header
+    background-color: $white
+  .card-header
+    font-size: 80%
+    margin-top: 5px
+    margin-bottom: 10px
+    border-bottom: 1px solid #DEE
+  .card_profile-image 
+    @include media(max-width $smartphone)
+      max-height: 100%
+  button 
+    @include sassy-brand-alt
+    margin: 1em 0.5em
+    float: left
+    padding: 8.75px 17.5px
+  .studio_overview
+    padding: 0
+    h1 
+      padding: 0
+      font-size: 16px
+      line-height: 24px
+      margin: 0
+  .card-header
+    i 
+      color: $brand
+  .card_rate
+    position: absolute
+    top: 2px
+    left: 5px
+    color: $white
+    font-weight: bold
+    @include text-shadow($black 1px 1px 0)
+  .ribbon-wrapper
+    z-index: 3
+  footer.thumbs 
+    clear: both
+    width: 100%
+    padding: 0 0.809em
+    border-top: 1px solid #ddd
+    padding-bottom: 0
+    @include media(min-width $tablet_h)
+      position: absolute
+      bottom: 0
+  ul.key_terms 
+    li 
+      ul 
+        margin: 0
+        li 
+          width: 100%
+          float: none
+          h2 
+            margin: 0
+      h2 
+        font-size: 12px
+        a
+          color: $gray-darker
+          font-weight: normal
+
+body.author 
+  .outlined
+    margin-top: 0
+    margin-bottom: 2em
+  aside
+    .card_profile 
+      .card_profile-image
+        display: none
+  .author_comment
+    .author_comment-content 
+      h1
+        font-size: 1.5em  
+        a 
+          color: $black
+
+    ul.social_media 
+      margin: 0 auto
+    .author_comment-image 
+      img
+        max-width: 200px
+  .card_profile:nth-child(3n+1)
+    clear: none
+  h4 
+    text-decoration: none
+    color: $brand-gray-light
+    font-size: 17.5px 
+
+
+aside
+  .card_profile
+    margin-bottom: 3em
+time 
+  text-transform: uppercase
+  color: $brand-gray-light
+  font-size: 12px    
+  font-weight: normal
+
+#archive_nav
+  margin: 1em 0
+        
+.prev_posts_link
+  float: left
+  font-size: 12px
+.next_posts_link
+  float: right  
+  font-size: 12px    
+
+// Authors
+.author_comment
+  border-bottom: none
+  i 
+    color: $brand-gray
+  p 
+    font-size: 14px
+  .author_comment-image
+    width: 40%
+    img
+      width: 100%
+      max-width: 100px
+      border: 0
+      background-color: $white
+      padding: 0
+      @include border-radius(50%)
+aside 
+  .author_comment 
+    border-bottom: none      
+    .author_comment-detail
+      line-height: 12px
+  .instagram_widget 
+    h4 
+      font-family: $custom-font-bold
+      color: #9f9f9f
+      text-align: center
+      text-decoration: none
+      font-size: 17.5px
+      margin: 17.5px 0 0
+
+article 
+  header 
+    margin-bottom: 1em
+    h1,
+    p 
+      margin-bottom: 0.5em
+body.single-article
+  .outlined
+    margin-top: 0
+  article 
+    img 
+      margin-bottom: 1em   
+  .author_comment .author_comment-image
+    width: 25%
+    padding-right: 10px   
+
+
+
+
+  
+
+// Quotes
+
+.trudio_quote
+  position: absolute
+  padding: $scale1
+  top: $scale8
+  right: $scale2
+  max-width: 330px
+  text-align: right   
+  color: $white
+  font-weight: bold
+  @include background('black-shade-30.png')   
+  background-repeat: repeat
+  @include media(max-width $smartphone)
+    display: none
+    top: 0
+    right: 0
+    max-width: 100%
+    text-align: left
+
+
+// Center Vertically 
+
+.vert_block 
+  text-align: center
+  border: #a0a0a0 solid 1px
+  margin: 20px
+  background-size: cover
+  background-color: transparent
+  background-repeat: no-repeat
+  height: 400px
+    
+.vert_block:before 
+  content: ''
+  display: inline-block
+  height: 100% 
+  vertical-align: middle
+  margin-right: -0.25em 
+    
+.vert_block_centered 
+  display: inline-block
+  vertical-align: middle
+  width: 300px
+  padding: 1em
+  border: #a0a0a0 solid 1px
+  background: transparent
+  color: #fff
+ 
+.vert_block_centered p,
+.vert_block_centered h1
+  color: #fff
+  margin: 0
+  
+
+// Misc
+
+.show-me
+  display: block !important
+.author 
+  span.type 
+    text-transform: capitalize
+.entry-content,
+article
+  ul.bullets
+    padding-left: 2em
+    margin-top: 0
+    margin-bottom: 2em
+    li 
+      list-style-type: disc
+
+.cols2
+  @include columns(10em 2)  
+.cols3
+  @include columns(10em 3)
+
+ol.cols3
+  -webkit-columns: 10em 3
+  -moz-columns: 10em 3
+  columns: 10em 3
+  
+#main_testimonial
+  border-left: 10px solid red
+  background-color: #777
+  min-height: 295px
+  img
+    float: right
+
+div.thirds
+  width: 31.1%
+  float: left
+  margin-right: 3.333%
+
+  &:nth-child(3)
+    margin-right: 0
+  
+.testimonial_content
+  padding: 30px
+  border: 1px solid #777
+  background-color: #eee
+  padding-right: 30px
+  
+.fa-heart      
+  color: $brand
+
+.squiggle    
+  font-size: $scale5
+  text-align: center
+  color: $brand
+   
+ul.wpuf-form li .wpuf-fields .wpuf-help
+  display: block
+span.available
+  color: #ccc 
+.busy
+  color: $red-brown
+  opacity: 0.5
+  float: right
+  font-size: 10px
+  font-weight: bold
+
+table.dashboard
+  button 
+    @include sassy-brown  
+// Payment Styles
+
+.payment_button_holder
+  margin-top: $scale2 
+
+.author_comment-image
+  span 
+    img 
+      @include border-radius(50%)      
+img.fill_width
+  width: 100%
+
+.null-instagram-feed
+  text-align: center
+  list-style-type: none
+  list-style: none
+  h4 
+    margin: 17.5px 0 
+  ul 
+    margin: 0
+    list-style-type: none
+    list-style: none
+    li 
+      margin: 0
+      list-style-type: none
+      list-style: none
+  .instagram-pics 
+    li img
+      width: 100%
+      max-width: 100%
+      padding: 1em
+
+.uppercase 
+  text-transform: uppercase
+
+span.stripe
+  background-color: #fff
+  padding-right: 30px
+  
+hr.stripe
+  margin-top: -25px  
+
+  

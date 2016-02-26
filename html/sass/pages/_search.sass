@@ -1,0 +1,157 @@
+body.search
+  .main 
+    padding-top: 0
+  textarea#t 
+    display: none
+  #right_side
+    margin-top: $scale1
+  .anchor_links
+    display: none
+body.search-results
+  .anchor_links
+    display: none 
+header  
+  p.acps_keyword_input
+    display: none
+#search_filter
+  text-align: center
+  max-width: 620px
+  min-height: 188px
+  display: block
+  background-color: #f7f7f7
+  @include center-block
+  margin-top: 0
+  padding-top: 0
+  header
+    h2 
+      font-family: $helvetica
+      color: $charcoal
+      font-size: $scale5
+      font-weight: 300
+      background-color: $white
+      padding: 0 $scale1
+      position: relative
+      z-index: 1
+      margin: 24px 0 0 0
+    p 
+      strong 
+        color: $trudio-brown 
+.filter_form
+  padding: $scale1
+  border: 1px solid $trudio-gray-light
+  margin-bottom: $scale1
+  @include border-radius(5px)
+  input[type="checkbox"], 
+  input[type="radio"]
+    margin: -4px 0 0 0
+  label 
+    font-size: $scale1
+    font-weight: normal
+    color: $gray-darker 
+  ul 
+    @include fill-parent
+    margin: 0
+    clear: left
+    li 
+      width: auto
+      float: left
+      margin-right: $scale-2
+      &:last-child
+        clear: right
+        margin-right: 0
+        margin-bottom: $scale1
+      &:first-child
+        @include media(max-width $tablet_v + 1)
+          float: none  
+span.acps_form_label
+  font-family: $custom-font-bold
+  font-size: 24px
+  color: $trudio-gray-light
+  margin: 2px 0 0
+  @include text-shadow($gray-darker 0 1px 0)
+input.acps_submit
+  margin: 0
+  @include media(max-width $tablet_v + 1)
+    clear: left
+    display: block
+  
+#geoLink              
+  display: inline-block
+  
+// #keyword_search
+//   .acps_form_container
+//     margin: 0 auto
+//   form  
+//     input
+//       height: 60px
+//       font-size: 30px
+//       color: $gray-darker
+//       width: 80%
+//       max-width: 1200px
+//       float: left
+//       margin: 0
+//     input[type="submit"]
+//       width: 20%
+//     input.acps_submit
+//       padding: 15px !important
+//       color: $white
+//     input[name="keywords"]
+//       font-weight: 300
+//       font-size: 24px
+//       line-height: 24px
+//       padding-left: 15px
+//   p 
+//     &:last-child
+//       position: relative
+//       top: 0 
+//       text-align: center 
+//   width: 100%
+//   float: left
+//   @include media(min-width $tablet_v + 1 )
+//     width: 328px
+//   @include media(max-width $tablet_v)
+//     float: none
+//     @include center-block
+//   form  
+//     input
+//       height: 30px
+//       font-size: 14px
+//       color: $gray-darker
+//       width: 100%
+//       float: left
+//       margin: 0
+//       @include media(min-width $tablet_v + 1 ) 
+//         width: 80%
+//         max-width: 266px
+//     input[type="submit"]
+//       width: 100%
+//       @include media(min-width $tablet_v + 1 )
+//         width: 20%
+//         max-width: 68px
+//     input.acps_submit
+//       padding: 7px !important
+//       color: $white
+//     input[name="keywords"]
+//       font-weight: 300
+//       font-size: 14px
+//       line-height: 16px
+//       padding-left: 3px 
+// header 
+//   #keyword_search
+//     form 
+//       input
+//         padding: 0
+//         color: $white
+//         &[type="text"]
+//           @include border-radius(5px 5px 0 0)
+//           @include retina-image('/images/search-icon', 16px 16px)
+//           background-repeat: no-repeat
+//           background-position: 98% 50%
+//         &[type="submit"]
+//           @include border-radius(0 0 5px 5px)
+//         @include media(min-width $tablet_v + 1 )
+//           &[type="text"]
+//             @include border-radius(5px 0 0 5px)
+//           &[type="submit"]
+//             @include border-radius(0 5px 5px 0)
+
