@@ -42,25 +42,25 @@
         <script src="<?php echo site_url()?>/assets/js/main.js"></script>
     <script>
         $('#newgame').hide();
-        var people = [];
-        var people = [
-            {
-                "name": "Mommy",
-                "img_url": "<?php echo site_url()?>/uploads/mommy.jpg"
-            },
-            {
-                "name": "Daddy",
-                "img_url": "<?php echo site_url()?>/uploads/daddy.jpg"
-            },
-            {
-                "name": "Nanni",
-                "img_url": "<?php echo site_url()?>/uploads/nanni.jpg"
-            },
-            {
-                "name": "Grandma",
-                "img_url": "<?php echo site_url()?>/uploads/grandma.jpg"
-            }
-        ];
+        // var people = [];
+        // var people = [
+        //     {
+        //         "name": "Mommy",
+        //         "img_url": "<?php echo site_url()?>/uploads/mommy.jpg"
+        //     },
+        //     {
+        //         "name": "Daddy",
+        //         "img_url": "<?php echo site_url()?>/uploads/daddy.jpg"
+        //     },
+        //     {
+        //         "name": "Nanni",
+        //         "img_url": "<?php echo site_url()?>/uploads/nanni.jpg"
+        //     },
+        //     {
+        //         "name": "Grandma",
+        //         "img_url": "<?php echo site_url()?>/uploads/grandma.jpg"
+        //     }
+        // ];
 
         var game_counter = 0;
         var correct_answers = 0;

@@ -26,6 +26,21 @@
                         </ul>
                     </header>
                     <div id="table">
+                        <?php 
+                          $general_args = array(
+                            'post_status' => 'publish',
+                            'post_type' => 'article',
+                            'posts_per_page' => -1,
+                            'order' => 'ASC'
+                         );
+                         $general_faq_query = new WP_Query($general_args);
+                        ?>
+                        <?php $general_faq_item = 1; if($general_faq_query->have_posts()) : ?>
+                        <script>
+                          var people = [<?php while($general_faq_query->have_posts()) : $general_faq_query->the_post() ?>{"name": "<?php the_title();?>","img_url": "<?php the_post_thumbnail_url(); ?>"},<?php $general_faq_item++; endwhile ?>];
+                          console.log(people[0].name+' '+people[1].name+' '+people[2].name, 'info');
+                        </script>
+                        <?php endif; wp_reset_query(); ?>
                         <div id="card_holder">
                             <!-- Main Game Play Area -->
 
